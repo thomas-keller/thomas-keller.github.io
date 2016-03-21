@@ -19,6 +19,8 @@ I have touched on many evolutionary topics during my academic training, and I'm 
 
 I am actively seeking opportunities in the Tampa, Florida region. Specific job sectors of interest include biotechnology, health care, and data science.
 
+All pictures on this website were taken by me. You can follow me on [Instagram](https://www.instagram.com/thomas.e.keller/) if you're into that kind of thing! 
+
 
 
 <div class="tiles">
