@@ -6,15 +6,13 @@ modified:
 excerpt:
 tags: []
 image:
-  feature: # adel.jpg
+  feature: # jobhunt_headshot_031416.jpg
   teaser:
   thumb:
 share: false
 ---
 
-<img src="https://adeldaoud.github.io/images/adel.jpg" width="400">
+<img src="https://thomas-keller.github.io/images/jobhunt_headshot_031416.jpg" width="400">
 
-I am currently appointed as a postdoctoral researcher at the Department of Sociology and Work Science, at University of Gothenburg, Sweden, and as a visiting scholar at the Fielding School of Public Health, University of California, Los Angeles, the US. 
-
-My research is currently being funded by the [Swedish Research Council](http://www.vr.se/) within its International Postdoc Programme. I am entitled to be abroad for two of the three years of what the funding covers. My project is about the *Impact of the 2008 Financial Crisis on Child Poverty in Developing Countries*.
+I recently finished a postdoctoral study with Dr. Soojin Yi at the Georgia Institute of Technology studying evolutionary epigenetics. Prior to that I completed by Ph.D at the university of Texas at Austin and was co-advised by Dr. James J. Bull (i.e. Jim) and Claus O. Wilke. I can honestly say that I have been incredibly humbled to have worked with these great scholars through my graduate and post-doctorate training.
 
