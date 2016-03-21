@@ -3,7 +3,7 @@ layout: archive
 permalink: /
 title: "A Scientific Programmer in the Tampa Bay"
 image:
-  feature: float-18.jpg
+  feature: busy_bee.jpg
 ---
 
 Hi! I recently moved to the Tampa Bay Area.
