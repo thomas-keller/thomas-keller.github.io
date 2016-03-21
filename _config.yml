@@ -23,8 +23,8 @@ gems:
 # Site owner
 owner:
   name: Dr. Thomas E. Keller
-  email: thomas.e.keller@gmail.com
-  twitter: @tek_keller
+  email: "thomas.e.keller@gmail.com"
+  twitter: "@tek_keller"
   google:
     ad-client:
     ad-slot:
