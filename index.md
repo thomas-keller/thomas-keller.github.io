@@ -1,18 +1,21 @@
 ---
 layout: archive
 permalink: /
-title: "A Social Scientist Interested in Global Issues and New Ways of Portraying the World"
+title: "A Scientific Programmer Plugging in Numbers in the Tampa Bay"
 image:
-  feature: daoud.png
+  feature: float-8.jpg
 ---
 
-I work on figuring out why we have so much poverty in a world of plenty. My research revolves around the question why societies often value financial resources, over peoples´ health – or worse, lives. Another focal point is how children suffer because of dysfunctional governments (and institutions) that wage war with its neighbouring countries; or because their families stood in their way for education. Societies can only improve, if the opportunities for its children cultivates – so children can flourish. 
+Hi! I recently moved to the Tampa Bay Area.
 
-I pursue to examine these question preferably by using well-founded social theorizing combined with large data, and robust methodologies. For these reasons, my work tends to be quantitative and theoretical. I seek to learn and implement new techniques (e.g. [machine learning](https://en.wikipedia.org/wiki/Machine_learning)) and ways of picturing insightful visualizations of information (inspired by [Edward Tufte](http://www.edwardtufte.com/tufte/)). 
+I have a Ph.D. with a background in bioinformatics first studying bacterial and viral genomes during graduate school before switching to evolutionary epigenetics for post-graduate work. 
 
-I happened to have a Ph.D. in sociology, but could have equally had it in economics, political science, or mathematics. I work with colleagues from various disciplines and several countries (most notably, the US, the UK, Germany, France, Sweden).
+[For my full C. V. please click here.](http://thomas-keller.github.io/cv_tk_031616.pdf)
 
-My normative aim is – to borrow from Aristotle´s idea on eudaimonia – to contribute to the betterment of our global society so all individuals can flourish. My research is a small piece adding to that.
+[For my Google Scholar please click here.](http://scholar.google.com/citations?user=HIBfsy4AAAAJ&hl=en)
+
+
+I am actively seeking opportunities in the Tampa, Florida region. Specific job sectors of interest include biotechnology, health care, and data science.
 
 
 
