@@ -3,6 +3,8 @@ layout: article
 title: At least skinny-bones doesn't break github pages (if I change almost nothing)
 excerpt: I guess I learned something valuable about reinventing the webpage over and over again
 comments: true
+image:
+    teaser: back-2.jpg
 ---
 
 Well, that other blog looked snazzy, but I couldn't figure out how to figure out how to get the rake file to be compiled properly so it would be uploaded nicely for the static version on github. 

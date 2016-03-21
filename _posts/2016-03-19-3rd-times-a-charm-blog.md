@@ -2,6 +2,8 @@
 layout: article
 title: 3rd times a blog - and hyphens are a sin
 comments: true
+image:
+    teaser: back-25.jpg
 ---
 
 Well, as I mentioned yesterday I started diving into git and am already on the third version of a website, after going through pelican (after @wrightingapril), minimal mistakes (after @svscarpino), and now I'm at this dude's blog [Will Koehler](http://willkoehler.net/) . I did have a brief go with the most recent version of minimal mistakes, skinny bones, but that was giving me really janky jekyll build messages so vague that I didn't want to figure out how to debug it. 
