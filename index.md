@@ -10,7 +10,7 @@ Hi! I recently moved to the Tampa Bay Area.
 
 I have a Ph.D. with a background in bioinformatics first studying bacterial and viral genomes during graduate school before switching to evolutionary epigenetics for post-graduate work. 
 
-I have touch on many evolutionary topics during my academic training, and I'm looking to use the computational skills I picked up along the way in some bioinformatics or data science roles.
+I have touched on many evolutionary topics during my academic training, and I'm looking to use the computational skills I picked up along the way in some bioinformatics or data science roles.
 
 [For my full C. V. please click here.](http://thomas-keller.github.io/cv_tk_031616.pdf)
 
