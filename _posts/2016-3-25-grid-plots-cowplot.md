@@ -7,7 +7,7 @@ image:
     teaser: back-9.jpg
 ---
 
-One of the last papers from the postdoc with my really cool mentor [Soojin Yi](http://www.yilab.gatech.edu/) is out now in early view in [Molecular Ecology](http://onlinelibrary.wiley.com/doi/10.1111/mec.13573/abstract). This was a really fun and hard project for all sorts of reasons (I got to collaborate with my friend [Dr. Jesse R. Lasky](http://laskylab.org) who I first met in graduate school! I don't normally work with plants! I'm not normally an ecologist!). But none of those points are the point of this story.
+One of the last papers from the postdoc with my really cool mentor [Soojin Yi](http://www.yilab.gatech.edu/) is out now in early view at [Molecular Ecology](http://onlinelibrary.wiley.com/doi/10.1111/mec.13573/abstract). This was a really fun and hard project for all sorts of reasons (I got to collaborate with my friend [Dr. Jesse R. Lasky](http://laskylab.org) who I first met in graduate school! I don't normally work with plants! I'm not normally an ecologist!). But none of those points are the point of this story.
 
 I thought I'd step through some of the unexpected hurdles I encountered when getting to the end stage of the manuscript, after the reviews have gone back and forth, and its been accepted, and they want *REALLY* high quality figures. It had been a year or so since my last manuscript had gone through, and that journal had been fine with what I thought was a more or less standard 300-dpi tiff when submitting final figures. I'll swing back to cowplot at the end, but for years I had some options that I had hacked together that worked as figure-quality font sizes and placements, but only when saved as a tiff file, not as eps. 
 
