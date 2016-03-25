@@ -7,7 +7,7 @@ image:
     teaser: back-9.jpg
 ---
 
-One of the last papers from the postdoc with my really cool mentor [Soojin Yi](http://www.yilab.gatech.edu/) is out now in early view in [Molecular Ecology](http://onlinelibrary.wiley.com/doi/10.1111/mec.13573/abstract). This was a really fun and hard project for all sorts of reasons (I got to collaborate with my friend Dr. Jesse R. Lasky who I first met in graduate school! I don't normally work with plants! I'm not normally an ecologist!). But none of those points are the point of this story.
+One of the last papers from the postdoc with my really cool mentor [Soojin Yi](http://www.yilab.gatech.edu/) is out now in early view in [Molecular Ecology](http://onlinelibrary.wiley.com/doi/10.1111/mec.13573/abstract). This was a really fun and hard project for all sorts of reasons (I got to collaborate with my friend [Dr. Jesse R. Lasky](http://bio.psu.edu/directory/jrl35) who I first met in graduate school! I don't normally work with plants! I'm not normally an ecologist!). But none of those points are the point of this story.
 
 I thought I'd step through some of the unexpected hurdles I encountered when getting to the end stage of the manuscript, after the reviews have gone back and forth, and its been accepted, and they want *REALLY* high quality figures. It had been a year or so since my last manuscript had gone through, and that journal had been fine with what I thought was a more or less standard 300-dpi tiff when submitting final figures. I'll swing back to cowplot at the end, but for years I had some options that I had hacked together that worked as figure-quality font sizes and placements, but only when saved as a tiff file, not as eps. 
 
@@ -269,7 +269,7 @@ Sadly I am only now in writing this blog post realizing the typo in panel C. Sor
 
 I don't have a copy of Photoshop, and Inkscape is kind of a pain to work with. Mainly, there is a longstanding bug where if you want to export as eps (which you will for scientific figures) certain elements would disappear. This turns out to be related to grouping, so it you ungroup everything and thing save as eps, it's ok. Still, this was first reported 3 years ago. However, I'm mindful of the flack open source projects get for putting in their valuable free time, and it's still of great use. Just frustrating at times.
 
-So, after frankensteining the figure by cutting it in half, adding some space to add some legends to differentiate the different datasets, here is the actual figure for the paper.
+So, after frankensteining the figure by cutting it in half, adding some space to add some legends to differentiate the different datasets, here is the actual figure for the paper. I have no idea if a centered legend like this is possible in cowplot
 
 ![image](http://thomas-keller.github.io/images/Fig3_with_annot.png)
 
