@@ -1,6 +1,7 @@
 ---
 layout: article
 title: Cowplot is pretty OK in my book
+excerpt: vectors are for cool kids
 comments: true
 image:
     teaser: back-9.jpg
