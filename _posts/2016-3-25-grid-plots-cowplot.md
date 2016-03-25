@@ -253,6 +253,13 @@ hm<-plot_grid(p1,p2,p3,p4,p5,p6,labels=c('A','B','C','D','E','F'),ncol=3,nrow=2,
 save_plot('Fig_3_for_internets.png',hm,ncol=3,nrow=2)
 ```
 
+What's noteworthy, aside from my spagetti code and regrettable habit of copy-pasting (there's always the thought that it's going to be one and done, so what's the point of turning into a function... hundreds of lines later...), is that the actual cowplot part is thankfully nice and short, just 3 lines. And, it has sane defaults. Well, it has Claus Wilke defaults, which most who have met him would agree are more or less the same thing.          
+
+```R
+hm<-plot_grid(p1,p2,p3,p4,p5,p6,labels=c('A','B','C','D','E','F'),ncol=3,nrow=2,align='h')
+save_plot('Fig_3_for_internets.png',hm,ncol=3,nrow=2)
+```
+
 This is the figure straight out of R, with no modifications. and of course, the irony of getting it to display on github
 ...45 minutes later I'm realizing why my labmate Ixa's husband Urko was raving about Knitr...
 
