@@ -4,6 +4,7 @@ title: Cowplot is pretty OK in my book
 excerpt: vectors are for cool kids
 comments: true
 image:
+    feature: float-4.jpg
     teaser: back-9.jpg
 ---
 
