@@ -41,7 +41,10 @@ But definitely be aware that camera blur caused by taking a picture in low light
 ### Why in the world aren't you talking about R yet?
 I'm glad you asked! Keeping track of [EXIF](https://en.wikipedia.org/wiki/Exchangeable_image_file_format) is certainly not a new idea in the R literature, see this cool [Rpub](https://rpubs.com/yoke2/focal-length-with-exiftool-and-r) by Yoke Keong Wong that explored photography tendencies they had over three years. I, sadly, only have one month's data to go by with. I got my EXIF data by writing a terrible python 3 [script](http://thomas-keller.github.io/exif_datamine.py). You can see the Rpub for a probably less painful method using exiftool.
 
-However, there are already a few cool things to talk about.
+However, there are already a few cool things to talk about. First, over the last month I kept 137 pictures out of 663 shutter clicks, so an acceptance rate of about 21%. Get used to throwing away photos and keeping the better ones! Fortunately, all digital ink wastes is your time, etc, etc. One feature most fancier cameras have that I still don't use as much as I should, especially for birds and stuff, is continuous shooting for when you expect action.
+
+Anyway, to plots:
+
 
 ```R
 #figures for post about photography
@@ -69,14 +72,14 @@ The most interesting thing about panel A is the huge peak at 150mm. This corresp
 
 <img src="https://thomas-keller.github.io/images/lichen.jpg" width="800">
 
-As the obsesso macro spiral begins and you get more xxtreme you start rigging weird extra crap onto your lens lay a raynox that increase the magnification to 2:1 and beyond. 
+As the obsesso macro spiral begins and you get more xxtreme you start rigging weird extra crap onto your lens like a raynox (yet another lens) that increases the magnification to 2:1 and beyond. 
 
 <img src="https://thomas-keller.github.io/images/leaf_vein.jpg" width="800">
 
 Of course, at this point your depth of field is so shallow you have to crank up the aperture to get ANYTHING in focus, and that means usually bringing in lights and flashes to help brighten subjects. It starts getting weird and expensive if you're really into it. I'm not there yet!
 
 
-In Panel B most pictures have an aperture skewed far to the left, letting in as much light as possible. These pictures also have have very narrow depths of fields, however you pluralize that. The DoF benefit to increasing f-stops falls off past f-15 or so, which is why you don't see many really high values, as also a fast shutter speed is more than sufficient to balance even moderate f-stops. In reality you are often struggling to not get camera shake, unless it is a bright day.
+Moving on, in Panel B most pictures have an aperture skewed far to the left, letting in as much light as possible. These pictures also have very narrow depths of fields, however you pluralize that. The DoF benefit to increasing f-stops falls off past f-15 or so, which is why you don't see many really high values, as also a fast shutter speed is more than sufficient to balance even moderate f-stops. In reality you are often struggling to not get camera shake, unless it is a bright day.
 
 Panel C shows a distribution of negative valued log10 normalized shutter speed values over the last month. Aside from the single value to the left of 0 (which untransformed was a 30 second nighttime picture), all of the other pictures were taken within fractions of a second. 
 <img src="https://thomas-keller.github.io/images/stars.jpg" width="800">
