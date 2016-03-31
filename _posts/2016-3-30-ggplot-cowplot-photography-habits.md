@@ -67,7 +67,7 @@ The most interesting thing about panel A is the huge peak at 150mm. This corresp
 
 As the obsesso macro spiral begins and you get more xxtreme you start rigging weird extra crap onto your lens lay a raynox that increase the magnification to 2:1 and beyond. 
 
-<img src="https://thomas-keller.github.io/images/plant_vein.jpg" width="400">
+<img src="https://thomas-keller.github.io/images/leaf_vein.jpg" width="400">
 
 Of course, at this point your depth of field is so shallow you have to crank up the aperture to get ANYTHING in focus, and that means usually bringing in lights and flashes to help brighten subjects. It starts getting weird and expensive if you're really into it. I'm not there yet!
 
