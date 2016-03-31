@@ -117,5 +117,5 @@ You can see there's a general negative correlation , but it's not quite signific
 
 This is because ISO is floating as a third variable to help control the overall amount of light getting in to the sensor and confounding the correlation. Cameras in the last 5-6 years have started having an auto-ISO feature that's pretty nice that let's the camera try to automatically try to figure out a good ISO for a proper exposure. So, say all you care about is have a low depth of field to blur the background, the camera can figure out the ISO and shutter speed (in theory) so that objects are neither blown out or blackened.  
 
-#In conclusion...
+# In conclusion...
 I hope we all learned something today. Paint your little fluffy clouds!
