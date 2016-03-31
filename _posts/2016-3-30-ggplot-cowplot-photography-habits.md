@@ -104,9 +104,9 @@ save_plot('exp_vs_aper.jpg',p)
 ![image](http://thomas-keller.github.io/images/exp_vs_aper.png)
 
 You can see there's a general negative correlation , but it's not quite significant:
-    > cor.test(-log10(df$exposure),df$aperture)
+> cor.test(-log10(df$exposure),df$aperture)
 
-            Pearson's product-moment correlation
+    Pearson's product-moment correlation
 
     data:  -log10(df$exposure) and df$aperture
     t = -1.7972, df = 135, p-value = 0.07453
