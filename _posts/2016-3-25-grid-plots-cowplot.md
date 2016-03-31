@@ -3,6 +3,7 @@ layout: article
 title: Cowplot is pretty OK in my book
 excerpt: vectors are for cool kids
 comments: true
+tags: bioinformatics, data science, dataviz, R
 image:
     teaser: back-9.jpg
 ---
