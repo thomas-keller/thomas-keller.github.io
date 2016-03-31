@@ -7,6 +7,8 @@ image:
     teaser: back-15.jpg
 ---
 
+Aside: if you're here you probably already know about the book, but Nicholas Felton's new book [Photoviz](http://www.amazon.com/gp/product/3899556453/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=3899556453&linkCode=as2&tag=feltroncom-20&linkId=LBM6JFKJD56LWEA5) looks wicked cool.
+
 ## Photography background (garbage if you just want the R i guess??)
 
 I got a decently fancy digital [SLR](https://en.wikipedia.org/wiki/Single-lens_reflex_camera) from Pentax (K-5) in grad school that I more or less immediately mothballed as I went into crunch-mode trying to get shit together to try to graduate in some sort of reasonable fashion. Pentax made a legendary intro-level SLR back in the film days, the K-1000, that I inherited from my dad. Since then I have de facto been a fan. They are, however way behind in popularity compared to the big dogs in the photography world, Nikon and Canon. 
