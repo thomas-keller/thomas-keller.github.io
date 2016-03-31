@@ -39,7 +39,9 @@ But definitely be aware that camera blur caused by taking a picture in low light
 
 
 ### Why in the world aren't you talking about R yet?
-I'm glad you asked! Keeping track of [EXIF](https://en.wikipedia.org/wiki/Exchangeable_image_file_format) is certainly not a new idea in the R literature, see this cool [Rpub](https://rpubs.com/yoke2/focal-length-with-exiftool-and-r) by Yoke Keong Wong that explored photography tendencies they had over three years. I, sadly, only have one month's data to go by with. However, there are already a few cool things to talk about.
+I'm glad you asked! Keeping track of [EXIF](https://en.wikipedia.org/wiki/Exchangeable_image_file_format) is certainly not a new idea in the R literature, see this cool [Rpub](https://rpubs.com/yoke2/focal-length-with-exiftool-and-r) by Yoke Keong Wong that explored photography tendencies they had over three years. I, sadly, only have one month's data to go by with. I got my EXIF data by writing a terrible python 3 [script](http://thomas-keller.github.io/exif_datamine.py) script. You can see the Rpub for a probably less painful method using exiftool.
+
+However, there are already a few cool things to talk about.
 
 ```R
 #figures for post about photography
