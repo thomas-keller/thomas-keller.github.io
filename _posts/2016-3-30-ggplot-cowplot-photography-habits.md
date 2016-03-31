@@ -37,19 +37,7 @@ But definitely be aware that camera blur caused by taking a picture in low light
 
 
 ### Why in the world aren't you talking about R yet?
-I'm glad you asked! Keeping track of [EXIF](https://en.wikipedia.org/wiki/Exchangeable_image_file_format) is certainly not a new idea in the R literature, see this cool [Rpub](https://rpubs.com/yoke2/focal-length-with-exiftool-and-r) by Yoke Keong Wong that explored photography tendencies they had over three years. I, sadly, only have one month's data to go by with. However, there are already a few cool things > cor.test(-log10(df$exposure),df$aperture)
-
-        Pearson's product-moment correlation
-
-data:  -log10(df$exposure) and df$aperture
-t = -1.7972, df = 135, p-value = 0.07453
-alternative hypothesis: true correlation is not equal to 0
-95 percent confidence interval:
- -0.31256659  0.01524164
-sample estimates:
-       cor 
--0.1528646 
-I can talk about.
+I'm glad you asked! Keeping track of [EXIF](https://en.wikipedia.org/wiki/Exchangeable_image_file_format) is certainly not a new idea in the R literature, see this cool [Rpub](https://rpubs.com/yoke2/focal-length-with-exiftool-and-r) by Yoke Keong Wong that explored photography tendencies they had over three years. I, sadly, only have one month's data to go by with. However, there are already a few cool things to talk about.
 
 ```R
 #figures for post about photography
@@ -96,11 +84,15 @@ One of the general rules of thumb when you first start to reduce camera blur, in
 Finally, Panel D shows again what I was talking about, way too much ISO 100. Especially since I really like macro stuff, there's a lot of bad light there that 400-1600 would be fine in. And again, I'm not trying to make a living off this stuff, I just post this on Instagram where it gets compressed to god knows what anyway? I actually don't know if Instagram has a separate compression step, but I would assume it does. 
 
 ---
+
+
 ```R
 p<-qplot(-log10(df$exposure),df$aperture)
 p<-p+xlab('Shutter Speed')+ylab('Aperture')
 save_plot('exp_vs_aper.jpg',p)
 ```
+
+
 ![image](http://thomas-keller.github.io/images/exp_vs_aper.png)
 
 You can see there's a general negative correlation , but it's not quite significant:
@@ -118,4 +110,6 @@ You can see there's a general negative correlation , but it's not quite signific
         cor 
     -0.1528646 
 '''
+
+
 This is because ISO is floating as a third variable to help control the overall amount of light getting in to the sensor and confounding the correlation. Cameras in the last 5-6 years have started having an auto-ISO feature that's pretty nice that let's the camera try to automatically try to figure out a good ISO for a proper exposure. So, say all you care about is have a low depth of field to blur the background, the camera can figure out the ISO and shutter speed (in theory) so that objects are neither blown out or blackened.  
