@@ -68,11 +68,11 @@ save_plot('tek_photodat.jpg',tekphoto,ncol=2,nrow=2)
 ![image](http://thomas-keller.github.io/images/tek_photodat.png)
 So before digging into each panel I should explain what lens I have for the camera a bit. The Pentax K-5, like most of the digital cameras that aren't stupidly expensive have a 1.5 crop factor that basically automatically zooms into whatever lens you are using even more. so a 35mm lens actually shoot like a ~50-52mm lens. Because of this crop factor, none of my lens are actually very wide in the end. 
 
-The most interesting thing about panel A is the huge peak at 150mm. This corresponds to the 100mm lens I have, which is actually a macrophotography lens. Macro lens let you take photos of things up to a 1:1 scale as below. Well, also I use the max telephoto range a fair bit to peep on birds and such.
+The most interesting thing about panel A is the huge peak at 150mm. This corresponds to the 100mm lens I have, which is actually a macrophotography lens. Macro lens let you take photos of things up to a 1:1 scale, which just means life size, as below. Well, also I use the max telephoto range a fair bit to peep on birds and such.
 
 <img src="https://thomas-keller.github.io/images/lichen.jpg" width="800">
 
-As the obsesso macro spiral begins and you get more xxtreme you start rigging weird extra crap onto your lens like a raynox (yet another lens) that increases the magnification to 2:1 and beyond. 
+As the obsesso macro spiral begins and you get more xxtreme you start rigging weird extra crap onto your lens like a raynox (yet another lens) that increases the magnification to 2:1, so larger than life size now and beyond. 
 
 <img src="https://thomas-keller.github.io/images/leaf_vein.jpg" width="800">
 
