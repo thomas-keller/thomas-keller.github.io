@@ -27,7 +27,7 @@ The final way to control exposure is with [ISO digital sensitivity](https://en.w
 
 ### FREE TIP INCOMING
 
-<img src="https://thomas-keller.github.io/images/moorhen_leg.jpg" width="400">
+<img src="https://thomas-keller.github.io/images/moorhen_leg.jpg" width="800">
 
 This ended up being somewhat amusing, as it illustrates the objects in motion at least. I have this nasty habit that has stuck with me since the old film days and I was a cheapskate or who knows why, but it's ISO 100 obsession. For a long time digital cameras did have problems at high ISO, but we are fast past that now. 800 and 1600 ISO is fine, and even my ancient camera of 5 years has "artistic" grain or whatever at 3200 ISO.
 
@@ -63,11 +63,11 @@ So before digging into each panel I should explain what lens I have for the came
 
 The most interesting thing about panel A is the huge peak at 150mm. This corresponds to the 100mm lens I have, which is actually a macrophotography lens. Macro lens let you take photos of things up to a 1:1 scale as below.
 
-<img src="https://thomas-keller.github.io/images/lichen.jpg" width="400">
+<img src="https://thomas-keller.github.io/images/lichen.jpg" width="800">
 
 As the obsesso macro spiral begins and you get more xxtreme you start rigging weird extra crap onto your lens lay a raynox that increase the magnification to 2:1 and beyond. 
 
-<img src="https://thomas-keller.github.io/images/leaf_vein.jpg" width="400">
+<img src="https://thomas-keller.github.io/images/leaf_vein.jpg" width="800">
 
 Of course, at this point your depth of field is so shallow you have to crank up the aperture to get ANYTHING in focus, and that means usually bringing in lights and flashes to help brighten subjects. It starts getting weird and expensive if you're really into it. I'm not there yet!
 
@@ -75,7 +75,7 @@ Of course, at this point your depth of field is so shallow you have to crank up 
 In Panel B most pictures have an aperture skewed far to the left, letting in as much light as possible. These pictures also have have very narrow depths of fields, however you pluralize that. The DoF benefit to increasing f-stops falls off past f-15 or so, which is why you don't see many really high values, as also a fast shutter speed is more than sufficient to balance even moderate f-stops. In reality you are often struggling to not get camera shake, unless it is a bright day.
 
 Panel C shows a distribution of negative valued log10 normalized shutter speed values over the last month. Aside from the single value to the left of 0 (which untransformed was a 30 second nighttime picture), all of the other pictures were taken within fractions of a second. 
-<img src="https://thomas-keller.github.io/images/stars.jpg" width="400">
+<img src="https://thomas-keller.github.io/images/stars.jpg" width="800">
 
 One of the cool things about Pentax cameras in recent years is that they have in-camera stabilization, which is fancy talk to mean that they can deal with your hand shaking a SMALL amount. You'll notice that I generally tended a shutter speed of at least 1/100. I should have probably used 1/150, but because of that stabilization 1/100 was usually OK I think. 
 
