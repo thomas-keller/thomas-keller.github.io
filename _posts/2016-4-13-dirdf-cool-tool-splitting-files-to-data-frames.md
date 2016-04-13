@@ -36,7 +36,7 @@ In R the steps would be somewhat similar normally. What I figured out, and actua
 
 A better way I guess would have would have been to use strsplit, but I always feel slightly betrayed by R's behavior by returning a list; it just feels alien to me. Also, sometimes i'll forget that it's a regex and doesn't like periods whereas split in python is cool with it (because it's not using a regex underneath). I really shouldn't, as its one of the examples in the stinking docs for strsplit, but here we are.
 
-Anyway, Dr. Jenny Bryan, who I recently discovered on Twitter (humane describer of R stats, follor her!), linked me to a recent cool project called [dirdf](https://github.com/ropenscilabs/dirdf). From what I could discern it seems like this mostly came together during the most recent #rstatsnyc unconf, so the docs are sparse, etc. But it works in my limited use of it. I will never understand how people can achieve these Herculean feats, but kudos to these peoples : [Henrik Bengtsson](https://twitter.com/henrikbengtsson), [Joe Cheng](https://twitter.com/jcheng),[Sean Kross](https://twitter.com/seankross).
+Anyway, Dr. Jenny Bryan, who I recently discovered on Twitter (humane describer of R stats, follor her!), linked me to a recent cool project called [dirdf](https://github.com/ropenscilabs/dirdf). From what I could discern it seems like this mostly came together during the most recent #rstatsnyc unconf, so the docs are sparse, etc. But it works in my limited use of it. I will never understand how people can achieve these Herculean feats, but kudos to these peoples : [Henrik Bengtsson](https://twitter.com/henrikbengtsson), [Joe Cheng](https://twitter.com/jcheng),[Sean Kross](https://twitter.com/seankross). There were probably others, maybe Dr. Bryan herself? Again, I don't really know the details.
 
 The idea is basically to read in a directory of files with some kind of naming structure (exact or fuzzy) and turns the files into a data frame for you or me to round around with.
 
@@ -51,7 +51,7 @@ devtools::install_github('ropenscilabs/dirdf')
     library(dirdf)
     dirdf('')
 ```
-###Horrible record scratch
+### Horrible record scratch
 
 I just realized that I put underscores in the dates instead of dashes. Looking back at my filenames, it actually would have been really annoying to parse. However, dirdf is a Cool and Neat Thing and I will use it more in the future. Had I named things properly I could just do something like
 
