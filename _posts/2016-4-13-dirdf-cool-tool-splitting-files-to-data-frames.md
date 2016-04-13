@@ -13,6 +13,8 @@ This is something of a short precurser post to a series of longer analyses where
 So, how do I restrict the date ranges? I'll explain the project more at length in later posts, but it uses a really nice R package called [smappR](https://github.com/SMAPPNYU/smappR/) by Pablo Barbera who is/will be an Assistant Professor at the University of Southern California. smappR actually wraps one of his other packages, twitteR, that polls the twitter waterhose. I had it dump out all the recorded tweets to a json file once an hour with the date and time, down to the hour and minute in the filename.
 
 As I said, this operation is pretty clean in python. Say I only wanted tweets from the actual day of the September republican primary (the 16th). Then I just
+
+
 ```python
     import glob
     #sample full filename republican_primary_2015_09_14_15_22.json
