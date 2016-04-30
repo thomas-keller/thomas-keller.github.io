@@ -5,7 +5,6 @@ tags: python, data science, bike sheds
 comments: true
 image:
     teaser: back-37.jpg
-    
 ---
 
 # The end
