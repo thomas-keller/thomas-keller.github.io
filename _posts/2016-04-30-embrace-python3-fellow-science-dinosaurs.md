@@ -1,12 +1,16 @@
 ---
 layout: Article
-title: Embrace python3 ye fellow scientific dinosaurs, the gilded age of 2.7 is finally past (It's the default in **Ubuntu 16.04 LTS**)
+title: Embrace python3 ye fellow scientific dinosaurs, the gilded age of 2.7 is finally past (It's the default in Ubuntu 16.04 LTS)
 tags: python, data science, bike sheds
 comments: true
 image:
     teaser: back-37.jpg
     
 ---
+
+# The end
+
+So, on April 20ish, 2016 Ubuntu 16.04 LTS got released. This is important because it's a long-term release, which means that all the companies it has service contracts with will move over to 16.04 from 14.04 (the last LTS) for 5 years. Python3 is also the system default, though 2.7 will likely never truly leave by the time you install a couple packages. The rest of the post goes into the reasons why I think it's a good idea to start moving to 3 if you haven't yet (most of the packages that you want to use probably have a 3 version by now), but certainly please stop recommending people learn 2.7 instead. I think that advice is actively detrimental at this point, especially if they are mostly doing smaller code for their own projects instead of for some larger organization that might be stuck with 2.7 for legacy code reasons. 
 
 ## The "is the python3 hump over?" question has sort of been answered
 
@@ -20,5 +24,5 @@ I'm actually interested to hear of any large, commonly used packages that **don'
 
 # Please start telling new students to learn python3, not 2.7
 
-I'm not really one for prognosicating or lecturing, but I do think it's time for peeps in the scientific community to start moving off from the security blanket of 2.7. I understand, really I do. We all like things that just work, and probably don't *really* want to be out on the bleeding edge. However, I think at this point advising newcomers to start with 2.7 vs 3.0 is verging on bad advise.
+I'm not really one for prognosicating or lecturing, but I do think it's time for peeps in the scientific community to start moving off from the security blanket of 2.7. I understand, really I do. We all like things that just work, and probably don't *really* want to be out on the bleeding edge. However, I think at this point advising newcomers to start with 2.7 vs 3.0 is verging on bad advice.
 

@@ -14,11 +14,18 @@ share: false
 
 {% include toc.html %}
 
-TODO
+# Evolution is the main connecting tissue of my academic papers
 
-imagine 90's era men at work icons
+I have studied a great many things since I began my academic research career. I actually first began doing research in a [shark research lab](https://www.flmnh.ufl.edu/fish/fpsr/) at the University of Florida counting shark rings on vertebrae to estimate age (important for fisheries, etc, especially as most shark hunting tends to be exclusively for the fins and in the past has rapidly depleted populations).
 
+count worms
 
+kill bacteria
 
+kill computers
 
+methylation
 
+data science
+
+hire me???
