@@ -1,5 +1,5 @@
 ---
-layout: Article
+layout: article
 title: Embrace python3 ye fellow scientific dinosaurs, the gilded age of 2.7 is finally past (It's the default in Ubuntu 16.04 LTS)
 tags: python, data science, bike sheds
 comments: true
