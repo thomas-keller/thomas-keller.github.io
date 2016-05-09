@@ -1,10 +1,11 @@
 ---
 layout: article
-title: bleeding-edge-tensor-flow-0.8-python3-docker-dont-cut-yerself-datascience-fluff
+title: Bleeding edge tensorflow 0.8 docker image python3 w/ pandas & fluff
 comments: true
 tags: python, docker, tensorflow, sideprojects
 image:
-    tease: back-21.jpg
+    teaser: back-30.jpg
+    
 ---
 
 ## Mountains out of what may be molehills
