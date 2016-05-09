@@ -30,9 +30,9 @@ Follow the one weird tip under **CUDA INSTALL** at [this guy's blog](https://www
 
 Anyway, I wanted to try to use python3 as much as possible so I set about trying to get this set to python3. There were some other docker iamages floating around already with python3 and tensorflow, so I just scavanged off those as much as I could ([thanks grahama!])(http://neuralniche.com/post/tensorflow/). That image dumps you straight to a root terminal, which is I guess better suited for maybe amazon instances. I'm strictly just messing around on my laptop so this is all Ivery interactive based. 
 
-    There were a few needless hours of staring dumblessly at the computer, because I still don't really get how containers work very well, much less building them. And trying to convert one hacked together dockerfile and then my own...well, I eventually figured out what I needed to do! And fortunately it's quite easy to add more packages if you happen to want more for yourself. Just search for pip3 area where I've written ADD HERE, and uh... add there :).
+There were a few needless hours of staring dumblessly at the computer, because I still don't really get how containers work very well, much less building them. And trying to convert one hacked together dockerfile and then my own...well, I eventually figured out what I needed to do! And fortunately it's quite easy to add more packages if you happen to want more for yourself. Just search for pip3 area where I've written ADD HERE, and uh... add there :).
     
-    Right now it's just got the main data science stalwarts, pandas, matplotlib, seaborn, and bokeh, plus statsmodels and scikit-learn. I haven't actually verified bokeh works in it because I've never touched bokeh before, but I'm reasonably certain it works. 
+Right now it's just got the main data science stalwarts, pandas, matplotlib, seaborn, and bokeh, plus statsmodels and scikit-learn. I haven't actually verified bokeh works in it because I've never touched bokeh before, but I'm reasonably certain it works. 
     
 ### Back to all my more important projects
 
