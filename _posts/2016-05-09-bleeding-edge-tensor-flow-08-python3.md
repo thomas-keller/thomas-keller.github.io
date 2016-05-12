@@ -8,9 +8,25 @@ image:
     
 ---
 
+# TL;DR I made a TensorFlow Dockerfile w/ some data science bells and whistles, Python3
+
+Here's the [docker hub link](https://hub.docker.com/r/thomasekeller/tensorflow-py3-frills/). It should work exactly like the normal tensorflow:gpu docker image does, where you can start a notebook with something like
+
+```
+~/docker_run_gpu.sh --net host -p 8888:8888 -v "/home/thomas/notebooks:/notebooks" thomasekeller/tensorflow-py3-frills
+```
+
+Or, if you just want to get going, and you have docker, you can 
+
+```
+docker pull thomasekeller/tensorflow-py3-frills
+```
+
+
 ## Mountains out of what may be molehills
 
-I wrote the other day that we as people in the scientific community should start moving over to python3 when we can, especially since we probably aren't beleaguered by legacy code like "real" programmers. However, I was immediately struck with a problem when I wanted to start playing around with Tensorflow, which only comes with a python2.7 solution for docker if want to use your gpu, which I have one so why not.
+I wrote the other day that we as people in the scientific community should start moving over to python3 when we can, especially since we probably aren't beleaguered by legacy code like "real" programmers. Howeve
+r, I was immediately struck with a problem when I wanted to start playing around with Tensorflow, which only comes with a python2.7 solution for docker if want to use your gpu, which I have one so why not.
 
 ### Tensorflow: the new bees knees for deep learning (ie neural networks) 
 
@@ -35,9 +51,9 @@ Anyway, I wanted to try to use python3 as much as possible so I set about trying
 There were a few needless hours of staring dumblessly at the computer, because I still don't really get how containers work very well, much less building them. And trying to convert one hacked together dockerfile and then my own...well, I eventually figured out what I needed to do! And fortunately it's quite easy to add more packages if you happen to want more for yourself. Just search for pip3 area where I've written ADD HERE, and uh... add there :).
     
 Right now it's just got the main data science stalwarts, pandas, matplotlib, seaborn, and bokeh, plus statsmodels and scikit-learn. I haven't actually verified bokeh works in it because I've never touched bokeh before, but I'm reasonably certain it works. 
+
     
 ### Back to all my more important projects
-oin
 This was important in some regards in that pretty much every job I'm really interested in right now are focused on machine-learning to at least some extent so I need to add that to my bag o' tricks. But, more importantly the giant twitter analysis from the fall has been 95% done for ages and I need to stop shuffling my feet and finish and add that to my portfolio. Balance in all things and all that.
 
 TEK
