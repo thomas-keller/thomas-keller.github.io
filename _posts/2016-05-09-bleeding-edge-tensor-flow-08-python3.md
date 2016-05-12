@@ -22,6 +22,7 @@ Or, if you just want to get going, and you have docker, you can
 docker pull thomasekeller/tensorflow-py3-frills
 ```
 
+Here is the dockerfile on [github](https://github.com/thomas-keller/docker-stuff/blob/master/tensorflow_py3_frills.dockerfile).
 
 ## Mountains out of what may be molehills
 
