@@ -26,16 +26,18 @@ Using Tensorflow with an Nvidia graphics card gpu on linux is...tricky. Using gr
 apt-get install nvidia-361 nvidia-cuda-toolkit
 ```
 
-Follow the one weird tip under **CUDA INSTALL** at [this guy's blog](https://www.pugetsystems.com/labs/articles/NVIDIA-CUDA-with-Ubuntu-16-04-beta-on-a-laptop-if-you-just-cannot-wait-775/) and that should get you a working symlink, everything complained before I had this in place, even though I had the toolkit installed.
+Follow the one weird tip under CUDA INSTALL at [this guy's blog](https://www.pugetsystems.com/labs/articles/NVIDIA-CUDA-with-Ubuntu-16-04-beta-on-a-laptop-if-you-just-cannot-wait-775/) and that should get you a working symlink, everything complained before I had this in plarce, even though I had the toolkit installed.
 
-Anyway, I wanted to try to use python3 as much as possible so I set about trying to get this set to python3. There were some other docker iamages floating around already with python3 and tensorflow, so I just scavanged off those as much as I could ([thanks grahama!])(http://neuralniche.com/post/tensorflow/). That image dumps you straight to a root terminal, which is I guess better suited for maybe amazon instances. I'm strictly just messing around on my laptop so this is all Ivery interactive based. 
+Anyway, I wanted to try to use python3 as much as possible so I set about trying to get this set to python3. There were some other docker iamages floating around already with python3 and tensorflow, so I just scavanged off those as much as I could [thanks grahama!](http://neuralniche.com/post/tensorflow/). That image dumps you straight to a root terminal, which is I guess better suited for maybe amazon instances. I'm strictly just messing around on my laptop so this is all Ivery interactive based. 
+
+**UPDATE 2016-05-12** Getting this to build properly with the symlinks to CUDA turned out to be a bit of a nightmare. Docker built without complaint, but importing tensorflow in python3 gave lots of angry errors that googling was not able to answer. Going back to Graham Annett's post revealed that I needed to be using a few more bleeding edge parts to get stuff to build properly, but it finally works! Also, I broke down and emailed him for advice and he fixed my dockerfile for me, which was way beyond the call. Seriously, if you want you see someone who actually knows what they are doing with docker and CUDA (at least a lot more than I), his [Gitlab](https://gitlab.com/u/besiktas) is a good place to start.
 
 There were a few needless hours of staring dumblessly at the computer, because I still don't really get how containers work very well, much less building them. And trying to convert one hacked together dockerfile and then my own...well, I eventually figured out what I needed to do! And fortunately it's quite easy to add more packages if you happen to want more for yourself. Just search for pip3 area where I've written ADD HERE, and uh... add there :).
     
 Right now it's just got the main data science stalwarts, pandas, matplotlib, seaborn, and bokeh, plus statsmodels and scikit-learn. I haven't actually verified bokeh works in it because I've never touched bokeh before, but I'm reasonably certain it works. 
     
 ### Back to all my more important projects
-
+oin
 This was important in some regards in that pretty much every job I'm really interested in right now are focused on machine-learning to at least some extent so I need to add that to my bag o' tricks. But, more importantly the giant twitter analysis from the fall has been 95% done for ages and I need to stop shuffling my feet and finish and add that to my portfolio. Balance in all things and all that.
 
 TEK
