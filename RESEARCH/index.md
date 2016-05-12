@@ -18,14 +18,14 @@ share: false
 
 I have studied a great many things since I began my academic research career. I actually first began doing research in a [shark research lab](https://www.flmnh.ufl.edu/fish/fpsr/) at the University of Florida counting shark rings on vertebrae to estimate age (important for fisheries, etc, especially as most shark hunting tends to be exclusively for the fins and in the past has rapidly depleted populations).
 
-count worms
+counting worms
 
-kill bacteria
+experimental evolution
 
-kill computers
+bacterial & viral bioinformatics
 
-methylation
+epigenetics bioinformatics
 
 data science
 
-hire me???
+

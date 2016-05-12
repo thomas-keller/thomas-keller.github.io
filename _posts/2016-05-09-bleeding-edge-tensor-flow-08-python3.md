@@ -25,8 +25,7 @@ docker pull thomasekeller/tensorflow-py3-frills
 
 ## Mountains out of what may be molehills
 
-I wrote the other day that we as people in the scientific community should start moving over to python3 when we can, especially since we probably aren't beleaguered by legacy code like "real" programmers. Howeve
-r, I was immediately struck with a problem when I wanted to start playing around with Tensorflow, which only comes with a python2.7 solution for docker if want to use your gpu, which I have one so why not.
+I wrote the other day that we as people in the scientific community should start moving over to python3 when we can, especially since we probably aren't beleaguered by legacy code like "real" programmers. However, I was immediately struck with a problem when I wanted to start playing around with Tensorflow, which only comes with a python2.7 solution for docker if want to use your gpu, which I have one so why not.
 
 ### Tensorflow: the new bees knees for deep learning (ie neural networks) 
 
