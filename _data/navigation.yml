@@ -3,7 +3,7 @@
 - title: Articles
   url: /articles/
   excerpt: "Writing about programming and statistics (mis) adventures."
-  image: back-22.gif
+  image: back-22.jpg
   
 - title: Research
   url: /research/
@@ -13,9 +13,9 @@
 - title: Papers
   url: /papers/
   excerpt: "papers, yep"
-  image: back-23.gif
+  image: back-23.jpg
 
 - title: About
   url: /about/
   excerpt: "How I got here, and where I'm going (I think)."
-  image: back-24.gif
+  image: back-24.jpg
