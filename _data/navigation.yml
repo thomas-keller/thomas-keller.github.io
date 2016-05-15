@@ -1,11 +1,21 @@
 # Site navigation links
 
-- title: RESEARCH
-  url: /RESEARCH/
-  excerpt: "Research"
-  image: back-25.jpg
+- title: Articles
+  url: /articles/
+  excerpt: "Writing about programming and statistics (mis) adventures."
+  image: back-22.gif
   
-- title: ABOUT ME
-  url: /ABOUT ME/
-  excerpt: "Just a sketch"
-  image: back-9.jpg
+- title: Research
+  url: /research/
+  excerpt: "Research background and current interests."
+  image: back-6.jpg
+
+- title: Papers
+  url: /papers/
+  excerpt: "papers, yep"
+  image: back-23.gif
+
+- title: About
+  url: /about/
+  excerpt: "How I got here, and where I'm going (I think)."
+  image: back-24.gif
