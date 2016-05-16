@@ -19,6 +19,11 @@ image:
 
 <div class="tile">
   <h2 class="post-title">Just a Person</h2>
-  <p class="post-excerpt">I like to bicycle, rock climb, and take pictures with my DSLR. You can check out my nature and macrophoto pictures on [Instagram](https://www.instagram.com/thomas.e.keller) if you're into that kind of thing! Finally, if you see me on the Pinellas Trail you should definitely wave. </p>
+  <p class="post-excerpt">I like to bicycle, rock climb, and take pictures with my DSLR. You can check out my nature and macrophoto pictures on <a href=https://www.instagram.com/thomas.e.keller>Instagram</a> if you're into that kind of thing! Finally, if you see me on the Pinellas Trail you should definitely wave. </p>
+</div><!-- /.tile --> 
+
+<div class="tile">
+  <h2 class="post-title">Weirdly, Wind-powered water-craft</h2>
+  <p class="post-excerpt">One of the things that is fun about being down in Florida again and being close to family is that I can bogart my dad's small sail-boats or wind-surfer and dink around at <a href="http://www.tampabay.com/things-to-do/destination-detail/fred-howard-park/5101"> Fred Howard Park </a>. </p>
 </div><!-- /.tile --> 
 </div><!-- /.tiles -->
