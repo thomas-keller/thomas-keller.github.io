@@ -2,7 +2,7 @@
 layout: home
 permalink: /
 image:
-  feature: tampa_water_night-1600x800.jpg
+  feature: night-bridge.jpg
 ---
 
 <div class="tiles">
