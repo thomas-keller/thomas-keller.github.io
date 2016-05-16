@@ -1,17 +1,17 @@
 ---
 layout: article
-title: "About"
-date: 2014-06-02T09:44:20-04:00
-modified: 2014-08-27T14:56:44-04:00
-excerpt: "This is the Skinny Bones about page."
+title: "About me"
+modified:
+excerpt:
+tags: []
 image:
-  feature:
+  feature: # jobhunt_headshot_031416.jpg
   teaser:
   thumb:
 share: false
-ads: false
 ---
 
-This is a work in progress.
+<img src="https://thomas-keller.github.io/images/jobhunt_headshot_031416.jpg" width="400">
 
-Just a little something I'm using to jump start a site refresh. I like to think of it as a starter for building your own Jekyll site. I purposely keep the styling minimal and bare to make it easier to add your own flare and markup.
+I recently finished a postdoctoral study with Dr. Soojin Yi at the Georgia Institute of Technology studying evolutionary epigenetics. Prior to that I completed by Ph.D at the university of Texas at Austin and was co-advised by Dr. James J. Bull (i.e. Jim) and Claus O. Wilke. I can honestly say that I have been incredibly humbled to have worked with these great scholars through my graduate and post-doctorate training.
+
