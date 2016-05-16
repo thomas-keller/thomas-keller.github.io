@@ -2,6 +2,7 @@
 layout: article
 title: dirdf is way better than crafting some ghastly regex to get your artisinal, bespoke tweet filenames
 comments: true
+categories: articles
 tags: data, Rstats, mongodb, twitter, bespoke
 image:
     teaser: back-11.jpg

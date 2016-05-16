@@ -2,6 +2,7 @@
 layout: article
 title: 3rd times a blog - and hyphens are a sin
 comments: true
+categories: articles
 image:
     teaser: back-25.jpg
 ---

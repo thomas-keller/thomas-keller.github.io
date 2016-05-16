@@ -2,6 +2,7 @@
 layout: article
 title: At least skinny-bones doesn't break github pages (if I change almost nothing)
 excerpt: I guess I learned something valuable about reinventing the webpage over and over again
+categories: articles
 comments: true
 image:
     teaser: back-2.jpg

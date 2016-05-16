@@ -2,6 +2,7 @@
 layout: article
 title: Using R, ggplot2, and cowplot to datamine and determine things you already knew about your photography habits
 comments: true
+categories: articles
 tags: data science, photography, dataviz, ggplot, cowplot
 image:
     teaser: back-15.jpg

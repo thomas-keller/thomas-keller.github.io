@@ -2,6 +2,7 @@
 layout: article
 title: Bleeding edge tensorflow 0.8 docker image python3 w/ pandas & fluff
 comments: true
+categories: articles
 tags: python, docker, tensorflow, sideprojects
 image:
     teaser: back-30.jpg
