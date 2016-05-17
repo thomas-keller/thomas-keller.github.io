@@ -23,7 +23,7 @@ image:
 </div><!-- /.tile --> 
 
 <div class="tile">
-  <h2 class="post-title">Weirdly enough, wind-powered water-craft</h2>
+  <h2 class="post-title">Weirdly enough, also enjoys wind-powered water-craft</h2>
   <p class="post-excerpt">One of the things that is fun about being down in Florida again and being close to family is that I can bogart my dad's small sail-boats or wind-surfer and dink around at <a href="http://www.tampabay.com/things-to-do/destination-detail/fred-howard-park/5101"> Fred Howard Park </a>. </p>
 </div><!-- /.tile --> 
 </div><!-- /.tiles -->
