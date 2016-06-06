@@ -11,7 +11,8 @@ image:
 # Summary
 
 Now is a really good time to start exploring deep learning models with real data, especially if you want to do it with images instead of just the MNIST dataset over and over again! Check out this [deep-learning solution](https://github.com/jocicmarko/ultrasound-nerve-segmentation) to the most recent Kaggle competition -- [Ultrasound Nerve Segmentation](https://www.kaggle.com/c/ultrasound-nerve-segmentation) by cool guy [Marko Jocic](https://twitter.com/_jocicmarko). If you have a more recent Nvidia graphics card (compute >=3.0, to be specific) and are on Linux, you can try this [docker build](https://hub.docker.com/r/thomasekeller/tensorflow-py3-frills/) with all the required dependencies.
--------
+
+****
 
 I've spent the last week or two digging more into tensorflow and how to actually, you know, do THINGS with it. As I described last time, I had managed to get the initial MNIST tutorial working by copying the code verbatim. The second tutorial is actually a bit of a doozy. The code as listed doesn't work with my lowly NVIDIA 755 with only 2GB of video RAM, which is at this point I guess pretty pathetic. After some googling around I found that some other example code they had actually used minibatches to deal with memory issues, but they wanted to kept the code as simple as possible so I guess hoped that the code wouldn't die for people.
 
