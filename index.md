@@ -19,7 +19,7 @@ image:
 
 <div class="tile">
   <h2 class="post-title">Just a Person</h2>
-  <p class="post-excerpt">I like to bicycle, rock climb, and take pictures with my DSLR. You can check out my nature and macrophoto pictures on <a href="https://www.instagram.com/thomas.e.keller">Instagram</a> if you're into that kind of thing! Finally, if you see me on the Pinellas Trail you should definitely wave. </p>
+  <p class="post-excerpt">I like to bicycle, rock climb, and take pictures with my DSLR. You can check out my nature and macrophotography pictures on <a href="https://www.instagram.com/thomas.e.keller">Instagram</a> if you're into that kind of thing! Finally, if you see me on the Pinellas Trail you should definitely wave. </p>
 </div><!-- /.tile --> 
 
 <div class="tile">
