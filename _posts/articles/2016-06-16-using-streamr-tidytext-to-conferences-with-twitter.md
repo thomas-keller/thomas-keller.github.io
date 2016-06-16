@@ -90,4 +90,4 @@ dev.off()
 
 This will then get you some approximation of the wordcloud below (words are randomly assembled so it will end up looking fairly different each time).
 
-<img src="https://thomas-keller.github.io/images/evol2016_wordcloud.png" width="400">
+<img src="https://thomas-keller.github.io/images/evol2016_wordcloud.png" width="800">
