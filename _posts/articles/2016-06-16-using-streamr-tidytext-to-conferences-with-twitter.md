@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Set up a twitter filter stream before a conference to check out the zeitgeist!
+title: Set up a twitter filter stream before a conference to properly check out the zeitgeist!
 excerpt: streamR and tidytext are pretty cool if you use R, yo
 comments: true
 categories: articles
@@ -11,7 +11,7 @@ image:
 
 # Summary
 
-I'm heading off to Austin to visit old haunts, friends, and learn a bunch about what other people are excited about and researching right now. I've found that trying to get a sense of what the twitterverse is talking about just from the moment-of stream can be overwhelming at times. The Twitter API is not built for retrospective analyses (it will only give you the most recent 2500 posts for a given filter, say "#evol2016" . Instead, invest a bit of time in to setting up a Twitter stream to capture tweets relating to specific topics before a conference, and then you'll have a much larger sample you can play around with. In R, I have found that the [streamR](https://github.com/pablobarbera/streamR) package is really easy to use. Getting Twitter API access does not take much time and just requires clicking on some buttons, see the streamR page for insight there. Once you have your twitter corpus, [tidytext](https://cran.r-project.org/web/packages/tidytext/index.html) is an easy way to do some easy natural language processing stuff to get you to something like a wordcloud.
+I'm heading off to Austin to visit old haunts, friends, and learn a bunch about what other people are excited about and researching right now. I've found that trying to get a sense of what the twitterverse is talking about just from the moment-of stream can be overwhelming at times. The Twitter API is not built for retrospective analyses (it will only give you the most recent 2500 posts for a given filter, say "#evol2016") . Instead, invest a bit of time in to setting up a Twitter stream to capture tweets relating to specific topics before a conference, and then you'll have a much larger sample you can play around with. In R, I have found that the [streamR](https://github.com/pablobarbera/streamR) package is really easy to use. Getting Twitter API access does not take much time and just requires clicking on some buttons, see the streamR page for insight there. Once you have your twitter corpus, [tidytext](https://cran.r-project.org/web/packages/tidytext/index.html) is an easy way to do some easy natural language processing stuff to get you to something like a wordcloud.
 
 # Twitter and R
 
@@ -52,7 +52,7 @@ done
 
 ***
 
-Once you have some tweets in a few jsons, there are two paths to easily analyzing them. If you've pulled down a large number and want to do some serious analysis, you may want to check out [smappR](https://github.com/SMAPPNYU/smappR) which has some code to dump json files into a mongoDB database. However, at a conference scale that's probably overkill so I'd recommend just merging the jsons into one large file "cat evol2016*json > merged_evol2016.json" and then using the parseTweets function provided by streamR. Here is how to do some simple processing of the tweets to remove URL links and some other trash so you can make a simple wordcloud. The sky is of course the limit at this point, you could also do some sentiment analysis stuff. Anyway, check out the intro vignette for [tidytext](https://cran.r-project.org/web/packages/tidytext/vignettes/tidytext.html) it is great and very easy to follow along.
+Once you have some tweets in a few jsons, there are two paths to easily analyzing them. If you've pulled down a large number and want to do some serious analysis, you may want to check out [smappR](https://github.com/SMAPPNYU/smappR) which has some code to dump json files into a mongoDB database. However, at a conference scale that's probably overkill so I'd recommend just merging the jsons into one large file "cat evol2016*json > merged_evol2016.json" and then using the parseTweets function provided by streamR. Here is how to do some simple processing of the tweets to remove URL links and some other trash so you can make a simple wordcloud. The sky is of course the limit at this point, you could also do some sentiment analysis stuff. Anyway, check out the intro vignette for [tidytext](https://cran.r-project.org/web/packages/tidytext/vignettes/tidytext.html); it is great and very easy to follow along.
 
 ```R
 library(tidytext)
@@ -88,7 +88,7 @@ fig<-tidy_tw %>%
 dev.off()
 ```
 
-This will then get you some approximation of the wordcloud below (words are randomly assembled so it will end up looking fairly different each time). Since I started pulling down tweets there have only been 450, so there's not a huge difference in word numbers that would be picked up by the coloring. I figure by this evening it will start picking up considerably.
+This script will then get you some approximation of the wordcloud below (words are randomly assembled so it will end up looking fairly different each time). Since I started pulling down tweets there have only been 450 posts, so there's not a huge difference in word numbers that would be picked up by the coloring. I figure by this evening (the night before the conference actually begins) it will start picking up considerably.
 
 Anyway, I think I'll be able to pull some of these tweets off my home computer while I'm in Austin to give further silly wordcloud updates, but we'll see.
 
