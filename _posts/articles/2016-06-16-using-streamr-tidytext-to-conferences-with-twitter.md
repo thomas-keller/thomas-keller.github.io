@@ -88,6 +88,8 @@ fig<-tidy_tw %>%
 dev.off()
 ```
 
-This will then get you some approximation of the wordcloud below (words are randomly assembled so it will end up looking fairly different each time).
+This will then get you some approximation of the wordcloud below (words are randomly assembled so it will end up looking fairly different each time). Since I started pulling down tweets there have only been 450, so there's not a huge difference in word numbers that would be picked up by the coloring. I figure by this evening it will start picking up considerably.
+
+Anyway, I think I'll be able to pull some of these tweets off my home computer while I'm in Austin to give further silly wordcloud updates, but we'll see.
 
 <img src="https://thomas-keller.github.io/images/evol2016_wordcloud.png" width="800">
