@@ -1,6 +1,7 @@
 ---
 layout: article
 title: Set up a twitter filter stream before a conference to check out the zeitgeist!
+excerpt: streamR and tidytext are pretty cool if you use R, yo
 comments: true
 categories: articles
 tags: twitter, waterhose, streaming, evol2016, R, streamR, tidytext
