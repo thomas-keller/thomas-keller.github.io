@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Articles"
+title: "Blog"
 date: 2014-05-30T11:39:03-04:00
 modified:
 excerpt: "Thoughts about (mis) adventures on programming and statistics."
