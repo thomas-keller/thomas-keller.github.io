@@ -14,7 +14,7 @@ image:
 
 <div class="tile">
   <h2 class="post-title">Data Scientist</h2>
-  <p class="post-excerpt">I've also moved into working with tools like Machine Learning, NLP, and Spark to take down the big scary Big Data monster. You can check out my posts to see how well or not that's going. \nI've been pretty good about putting any related code on my related <a href="https://github.com/thomas-keller"> Github page</a>.</p>
+  <p class="post-excerpt">I've also moved into working with tools like Machine Learning, NLP, and Spark to take down the big scary Big Data monster. You can check out my posts to see how well or not that's going.      I've been pretty good about putting any related code on my related <a href="https://github.com/thomas-keller"> Github page</a>.</p>
 </div><!-- /.tile -->
 
 <div class="tile">
