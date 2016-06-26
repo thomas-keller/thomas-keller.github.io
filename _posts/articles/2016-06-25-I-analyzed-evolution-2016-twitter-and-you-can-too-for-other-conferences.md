@@ -15,7 +15,7 @@ I just got back from the Evolution 2016 meeting in Austin, Texas; it was amazing
 
 # Getting tweets, streaming (setup beforehand, all relevant tweets) or search (last 7 days, not exhaustive) 
 
-As the head outlines, there are two main ways to collect tweets. The streaming API any broadcast tweets that contain a word in the filter list. This makes it easy it filter for events with unique hashtags, as in my case for Evolution 16 which used #evol16. The [previous post](http://thomas-keller.github.io/articles/using-streamr-tidytext-to-conferences-with-twitter/) lays out how to set up a stream pretty pretty I feel. However, having got back from Evolution, I now realize that was only about 15 thousand tweets and maybe not actually needing the streaming infrastructure. Streaming insures you won't lose tweets, but doing a search after the conference might be easier some times. See [this website](http://www.r-bloggers.com/playing-with-twitter-data/) for details, it's pretty good.
+As the head outlines, there are two main ways to collect tweets. The streaming API collects any broadcast tweets that contain a word in the filter list. This makes it easy it filter for events with unique hashtags, as in my case for Evolution 16 which used #evol16. The [previous post](http://thomas-keller.github.io/articles/using-streamr-tidytext-to-conferences-with-twitter/) lays out how to set up a stream pretty clearly I feel. However, having got back from Evolution, I now realize that was only about 15 thousand tweets and maybe not actually needing the streaming infrastructure. Streaming insures you won't lose tweets, but doing a search after the conference might be easier some times. See [this website](http://www.r-bloggers.com/playing-with-twitter-data/) for details, it's pretty good.
 
 # Making those sweet figures
 
@@ -50,14 +50,10 @@ tidy_tw <- tidy_tw %>%
 
 print(tidy_tw %>% count(word, sort = TRUE)) 
 
+png('evol2016_alldays.png')
 fig<-tidy_tw %>%
   count(word) %>%
   with(wordcloud(word, n,remove=c("evol2016"),max.words = 100,colors=brewer.pal(8,'Dark2')))
-
-png('evol2016_wordcloud_day3_real.png',width=12,height=8,units='in',res=300)
-fig<-tidy_tw %>%
-  count(word) %>%
-  with(wordcloud(word, n, remove=c("i'm"),max.words = 100,colors=brewer.pal(8,'Dark2')))
 dev.off()
 
 gah<-tidy_tw %>% count(word)
@@ -103,8 +99,19 @@ save_plot("evol2016_sentiment_time.png",p)
 
 p2<-qplot(outdf$num_tweets.Freq)+scale_x_log10()+xlab("number #evol2016 tweets")+ylab("number of tweeters")
 print(p2)
-save_plot("evol2016_numtweets_user.png",p2)
+save_plot("evol2016_numtweets_user.png",p2)i
 ```
+
+The first figure produced is a wordcloud. These are in reality not very informative as placement in the cloud can skew interpretration of rank, but they are still visually appealing so everyone makes them and wants to look at them, including me. Haters vacate, I say. 
+<img src="https://thomas-keller.github.io/images/evol2016_wordcloud_alldays.png" width="800">
+
+The second figure was the one I spent the most time on, and is a plot of twitter "sentiment" through time. If you haven't heard of [sentiment analysis](https://en.wikipedia.org/wiki/Sentiment_analysis), well, you can be prepared for a deep dive if you want. The basic idea is simple, where we are trying to understand basic emotions of sentences, paragraphs, or in our case, tweets. 
+
+<img src="https://thomas-keller.github.io/images/evol2016_sentiment_time.png" width="800">
+
+There are several caveats to this figure. First, this was produced using what was using what is known as a "bag of words" sentiment corpus. You can get fancier by analyzing the tweet/sentence as a whole, but that's a separate analysis. I guess that's all I really want to get into.
+<img src="https://thomas-keller.github.io/images/evol2016_sentiment_time.png" width="800">
+The third figure is just the inverse relationship between the frequency of users during the conference with that number of #evol2016.
 
 The end
 yep that's it
