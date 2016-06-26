@@ -102,7 +102,7 @@ print(p2)
 save_plot("evol2016_numtweets_user.png",p2)i
 ```
 
-The first figure produced is a wordcloud. These are in reality not very informative as placement in the cloud can skew interpretration of rank, but they are still visually appealing so everyone makes them and wants to look at them, including me. Haters vacate, I say. 
+The first figure produced is a wordcloud. These are in reality not very informative as placement in the cloud can skew interpretration of rank, but they are still visually appealing so everyone makes them and wants to look at them, including me. Haters vacate, I say. It does lead to a painfully pixellated figure being produced, unfortunately- it shouldn't be this way but I can't figure out how to get the wordcloud to do something smarter without breaking. So I guess this is I guess a hint to just not use wordclouds after all. 
 <img src="https://thomas-keller.github.io/images/evol2016_alldays.png" width="800">
 
 The second figure was the one I spent the most time on, and is a plot of twitter "sentiment" through time. If you haven't heard of [sentiment analysis](https://en.wikipedia.org/wiki/Sentiment_analysis), well, you can be prepared for a deep dive if you want. The basic idea is simple, where we are trying to understand basic emotions of sentences, paragraphs, or in our case, tweets. 
