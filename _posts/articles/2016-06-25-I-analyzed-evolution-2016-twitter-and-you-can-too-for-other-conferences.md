@@ -110,7 +110,7 @@ The second figure was the one I spent the most time on, and is a plot of twitter
 <img src="https://thomas-keller.github.io/images/evol2016_sentiment_time.png" width="800">
 
 There are several caveats to this figure. First, this was produced using what was using what is known as a "bag of words" sentiment corpus. You can get fancier by analyzing the tweet/sentence as a whole, but that's a separate analysis. I guess that's all I really want to get into.
-<img src="https://thomas-keller.github.io/images/evol2016_numtweets.png" width="800">
+<img src="https://thomas-keller.github.io/images/evol2016_numtweets_user.png" width="800">
 The third figure is just the inverse relationship between the frequency of users during the conference with that number of #evol2016.
 
 The end
