@@ -113,6 +113,7 @@ There are several caveats to this figure. First, this was produced using what wa
 <img src="https://thomas-keller.github.io/images/evol2016_numtweets_user.png" width="800">
 The third figure is just the inverse relationship between the frequency of users during the conference with that number of #evol2016.
 
-The end
-yep that's it
+# The end
+
+Yep, that's it. Natural Language Processing is a huge rabbit hole, and it can look more or less endless to a newcomer. However, on the upside there are a lot of tools now that make it pretty easy to get started, and good tutorials. [tidytext](https://cran.r-project.org/web/packages/tidytext/vignettes/tf_idf.html) is a great vignette that I highly suggest, it is a quick read and super approachable for any skill level. 
 
