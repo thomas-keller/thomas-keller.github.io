@@ -103,14 +103,14 @@ save_plot("evol2016_numtweets_user.png",p2)i
 ```
 
 The first figure produced is a wordcloud. These are in reality not very informative as placement in the cloud can skew interpretration of rank, but they are still visually appealing so everyone makes them and wants to look at them, including me. Haters vacate, I say. 
-<img src="https://thomas-keller.github.io/images/evol2016_wordcloud_alldays.png" width="800">
+<img src="https://thomas-keller.github.io/images/evol2016_alldays.png" width="800">
 
 The second figure was the one I spent the most time on, and is a plot of twitter "sentiment" through time. If you haven't heard of [sentiment analysis](https://en.wikipedia.org/wiki/Sentiment_analysis), well, you can be prepared for a deep dive if you want. The basic idea is simple, where we are trying to understand basic emotions of sentences, paragraphs, or in our case, tweets. 
 
 <img src="https://thomas-keller.github.io/images/evol2016_sentiment_time.png" width="800">
 
 There are several caveats to this figure. First, this was produced using what was using what is known as a "bag of words" sentiment corpus. You can get fancier by analyzing the tweet/sentence as a whole, but that's a separate analysis. I guess that's all I really want to get into.
-<img src="https://thomas-keller.github.io/images/evol2016_sentiment_time.png" width="800">
+<img src="https://thomas-keller.github.io/images/evol2016_numtweets.png" width="800">
 The third figure is just the inverse relationship between the frequency of users during the conference with that number of #evol2016.
 
 The end
