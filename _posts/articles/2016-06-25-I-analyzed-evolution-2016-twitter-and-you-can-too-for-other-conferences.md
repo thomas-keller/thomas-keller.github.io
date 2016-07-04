@@ -25,6 +25,7 @@ The R code should hopefully be somewhat clear. the %>% commands you see might be
 
 The actual structure and formulation of these calls is a bit weird compared to "normal" function calls, but they are really powerful and allow chaining and compact code. That's the main logic needed to understand what's going on with the code if you haven't seen it before.
 a
+
 ```R
 library(tidytext)
 library(ggplot2)
