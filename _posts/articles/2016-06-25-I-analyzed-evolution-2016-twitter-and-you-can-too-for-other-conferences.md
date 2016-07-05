@@ -17,7 +17,7 @@ I just got back from the Evolution 2016 meeting in Austin, Texas; it was amazing
 
 As the head outlines, there are two main ways to collect tweets. The streaming API collects any broadcast tweets that contain a word in the filter list. This makes it easy it filter for events with unique hashtags, as in my case for Evolution 16 which used #evol16. The [previous post](http://thomas-keller.github.io/articles/using-streamr-tidytext-to-conferences-with-twitter/) lays out how to set up a stream pretty clearly I feel. However, having got back from Evolutiabion, I now realize that was only about 15 thousand tweets and maybe not actually needing the streaming infrastructure. Streaming insures you won't lose tweets, but doing a search after the conference with twitteR will be easier *most times*. *See [this website](http://www.r-bloggers.com/playing-with-twitter-data/) for details at the top*, it's pretty good. They also perform an alternate approach for analyzing sentiment (valence) with the qdap package which I haven't investigated but is interesting and seems quite robust and actively developed (check out the [github](https://github.com/trinker/qdap)). They also do some network stuff which was cool. 
 
-*To be clear, for conferences or these smaller gatherings I think [twitteR](https://cran.r-project.org/web/packages/twitteR/index.html) is the way to go.* For larger events, global conversations (#Brexit, #Olympics), do streamR as the amount of tweets that search can pull back is limited. But even mid-sized conferences will probably only get 15-25K tweets I'd guess (we'll see, I'm planning on doing this for TAGC in a couple weeks which is a monstrous union of all the all the model organism genetics conferences and there is a LOT of biotech Crispr money flying around there).
+**To be clear, for conferences or these smaller gatherings I think [twitteR](https://cran.r-project.org/web/packages/twitteR/index.html) is the way to go.** For larger events, global conversations (#Brexit, #Olympics), do streamR as the amount of tweets that search can pull back is limited. But even mid-sized conferences will probably only get 15-25K tweets I'd guess (we'll see, I'm planning on doing this for TAGC in a couple weeks which is a monstrous union of all the all the model organism genetics conferences and there is a LOT of biotech Crispr money flying around there).
 
 # Making those sweet figures
 
@@ -113,6 +113,10 @@ The first figure produced is a wordcloud. These are in reality not very informat
 <img src="https://thomas-keller.github.io/images/evol2016_alldays.png" width="800">
 
 The second figure was the one I spent the most time on, and is a plot of twitter "sentiment" through time. If you haven't heard of [sentiment analysis](https://en.wikipedia.org/wiki/Sentiment_analysis), well, you can be prepared for a deep dive if you want. The basic idea is simple, where we are trying to understand basic emotions of sentences, paragraphs, or in our case, tweets. 
+
+I put labels on some of the major events of the conference that I could think of that would likely be driving emotive tweets during times (generally the evenings). I was pleased that there was generally a nice diurnal cadence to the sentiment where it would fall to kind back near to the neautral 0 baseline, then creep back up in the evenings (seen by the faint vertical lines marking midnights).i
+
+However, I didn't take the time to actually groundtruth any of these intuitions, so it leaves in many ways a lot of room for improvement. I saw a recent post doing a similar analysis of the International Coral Reef 2016 Conference by [Dr. Kirsty L. Nash](http://www.kirstynash.com/icrs2016-summary.html) which was quite fascinating and improves on my attempts in most ways and actually asks an interesting question too: *are coral reef biologist bummers to be around*? 
 
 <img src="https://thomas-keller.github.io/images/evol2016_sentiment_time.png" width="800">
 
