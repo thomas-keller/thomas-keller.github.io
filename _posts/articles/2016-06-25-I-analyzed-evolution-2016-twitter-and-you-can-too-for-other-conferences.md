@@ -136,12 +136,23 @@ The final analysis I wanted to do was some kind of network figure so I finally l
 
 # The Cool as Heck (I think anyhow) Evol2016 twitter retweet network
 
-It took several days longer than I initially expected to get this working, but overall I'm pleased with the results. Mostly this was a result of completely forgetting how all network stuff works and then wanting to use something pretty instead of networkx, which I don't really remember how to use anymore and is python anyway. Python is great, but I had decided that I wanted to make a pretty visualization and therefore it had to be something real, real nice. [ggraph](https://www.ggplot2-exts.org/ggraph.html) stands out as a pretty great package right now for making crazy-pants networks if you are willing to work with some beta-level documentation. There is a crazy amount of functionality, as it seems to duplicate a large amount of igraph which is a massive network package, but the two main sites I can find so far through my admittedly subpar googling are the linked ggplot2-exts and the [https://github.com/thomasp85/ggraph](https://github.com/thomasp85/ggraph). 
+It took several days longer than I initially expected to get this working, but overall I'm pleased with the results. Mostly this was a result of completely forgetting how all network stuff works and then wanting to use something pretty instead of networkx, which I don't really remember how to use anymore and is python anyway. Python is great, but I had decided that I wanted to make a pretty visualization and therefore it had to be something real, real nice. [ggraph](https://www.ggplot2-exts.org/ggraph.html) stands out as a pretty great package right now for making crazy-pants networks if you are willing to work with some beta-level documentation. It is made by [Thomas Pedersen](https://twitter.com/thomasp85) who is frighteningly good at biology and R, and nice to boot! There is a crazy amount of functionality, as it seems to duplicate a large amount of igraph which is a massive network package, but the two main sites I can find so far through my admittedly subpar googling are the linked ggplot2-exts and the [https://github.com/thomasp85/ggraph](https://github.com/thomasp85/ggraph). 
 
 Don't get me wrong, there are already quite a few diverse examples and they are great, I just think there is room for a bit more hand-holding at some point. 
 
-I opted for mostly boring defaults. I suppose that defeats the purpose of using ggraph, which is built on the guts of ggplot2. I suppose I should be making something to vomit rainbows over the screen, but a rather plain lightly shaded network will have to suffice for now. I did come across this [website](http://lmullen.github.io/civil-procedure-codes/104-network-graphs-in-ggraph.html) that had some good examples on how to get down and dirty on modifying the arrows for directed networks and coloring nodes with different classes. I included my inline annotations that hopefully explain the logic of the R code a bit. Some of the retweet network was recycling someone else's code and I'm sure could be/has been done cleaner; I'm all ears to better implementations. This was always meant to be "a quick afternoon project." 
+I opted for mostly boring defaults. I suppose that defeats the purpose of using ggraph, which is built on the guts of ggplot2. I suppose I should be making something to vomit rainbows over the screen, but a rather plain lightly shaded network will have to suffice for now. I did come across this [website](http://lmullen.github.io/civil-procedure-codes/104-network-graphs-in-ggraph.html) that had some good examples on how to get down and dirty on modifying the arrows for directed networks and coloring nodes with different classes. I included my inline annotations that hopefully explain the logic of the R code a bit. Some of the retweet network was recycling someone else's code and I'm sure could be/has been done cleaner; I'm all ears to better implementations. This was always meant to be "a quick afternoon project."
 
+# The interpretation
+
+<img src="https://thomas-keller.github.io/images/evol2016_numtweets_user.png" width="800"> 
+
+Well, there are a couple features of a network to know about immediately. Most of these layout algorithms do some form of [force-directed choice](https://en.wikipedia.org/wiki/Force-directed_graph_drawing) which tries to minimize the "energy" of the network system by placing nodes (here, people) with high numbers of connections closer to the center of the network drawing and those with relatively fewer connections towards the edge of the drawing.
+
+One thing I was considering was trying to do some kind of temporal network that lights up through time to highlight the individual cliques and the sub-interests. This overall figure is not actually that useful or interesting as is. It's just a starting point visualization. But I still think it looks pretty cool. I didn't really play around much with trying to add more people into the network to see how dense I could make it before it became a giant blob. This tutorial by [
+Katya Ognyanova](http://kateto.net/networks-r-igraph) might also come in handy if you start playing around with ggraph, as it mimics most of the igraph API.
+
+Also, ggraph can be pronounced Giraffe, how cool is that (it's mighty cool, thank you very much).
+ 
 ```R
 library(tidytext)
 library(ggplot2)
@@ -248,7 +259,7 @@ rt_graph<-simplify(rt_graph,remove.multiple=T,remove.loops=TRUE,edge.attr.comb='
 
 library(ggraph)
 library(ggplot2)
-jpeg('evol2016_top50_twitter_network.jpg',width=960,height=960,pointsize=12,ppi=72)
+jpeg('evol2016_top50_twitter_network.jpg',width=960,height=960,pointsize=12)
 g1<-ggraph(rt_graph,'igraph',algorithm='kk')+
   geom_edge_fan(aes(alpha=retweet),edge_alpha=0.1)+
   geom_node_point(aes(size=num_tweets))+
