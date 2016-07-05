@@ -130,7 +130,7 @@ To summarize, in the real business world there are way fancier linear regression
 
 The third figure is just the inverse relationship between the frequency of users during the conference with that number of #evol2016.
 
-# Update 07-05-2016
+# Update 2016-07-06
 
 The final analysis I wanted to do was some kind of network figure so I finally live the dream and capitalize off the lab meetings I attended of [Lauren Ancel Meyers](http://www.bio.utexas.edu/research/meyers/). In a cruel twist of fate I did come down with something towards the end of the conference, so it was 100% part of the contact network, but WHO WAS IT???
 
