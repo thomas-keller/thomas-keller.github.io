@@ -144,7 +144,7 @@ I opted for mostly boring defaults. I suppose that defeats the purpose of using 
 
 # The interpretation
 
-<img src="https://thomas-keller.github.io/images/evol2016_numtweets_user.png" width="800"> 
+<img src="https://thomas-keller.github.io/images/evol2016_top50_twitter_network.jpg" width="800"> 
 
 Well, there are a couple features of a network to know about immediately. Most of these layout algorithms do some form of [force-directed choice](https://en.wikipedia.org/wiki/Force-directed_graph_drawing) which tries to minimize the "energy" of the network system by placing nodes (here, people) with high numbers of connections closer to the center of the network drawing and those with relatively fewer connections towards the edge of the drawing.
 
