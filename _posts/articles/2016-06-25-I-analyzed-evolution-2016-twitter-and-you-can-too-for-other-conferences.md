@@ -116,11 +116,15 @@ The second figure was the one I spent the most time on, and is a plot of twitter
 
 I put labels on some of the major events of the conference that I could think of that would likely be driving emotive tweets during times (generally the evenings). I was pleased that there was generally a nice diurnal cadence to the sentiment where it would fall to kind back near to the neautral 0 baseline, then creep back up in the evenings (seen by the faint vertical lines marking midnights).i
 
-However, I didn't take the time to actually groundtruth any of these intuitions, so it leaves in many ways a lot of room for improvement. I saw a recent post doing a similar analysis of the International Coral Reef 2016 Conference by [Dr. Kirsty L. Nash](http://www.kirstynash.com/icrs2016-summary.html) which was quite fascinating and improves on my attempts in most ways and actually asks an interesting question too: *are coral reef biologist bummers to be around*? 
+However, I didn't take the time to actually groundtruth any of these intuitions, so it leaves in many ways a lot of room for improvement. I saw a recent post doing a similar analysis of the International Coral Reef 2016 Conference by [Dr. Kirsty L. Nash](http://www.kirstynash.com/icrs2016-summary.html) which was quite fascinating and improves on my attempts in most ways and actually asks an interesting question too: *are coral reef biologist bummers to be around*? Her analysis actually dives into what is being talked about during the highs and lows during the conference, which I quite liked. Plus, she actually describes sentiment analysis a bit, which I still have yet to do here (maybe one day).
+
 
 <img src="https://thomas-keller.github.io/images/evol2016_sentiment_time.png" width="800">
 
 There are several caveats to this figure. First, this was produced using what was using what is known as a "bag of words" sentiment corpus. You can get fancier by analyzing the tweet/sentence as a whole, but that's a separate analysis. I guess that's all I really want to get into.
+
+To summarize, in the real business world there are way fancier linear regression/ sentence or n-gram ways to look at language, but more importantly -- **be careful about overinterpreting the silly bumps and curves in your trend lines**! 
+
 <img src="https://thomas-keller.github.io/images/evol2016_numtweets_user.png" width="800">
 The third figure is just the inverse relationship between the frequency of users during the conference with that number of #evol2016.
 
