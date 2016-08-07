@@ -16,6 +16,6 @@ I'm rather late to party (this super amazing R guy Karl Broman has [archived tal
 
 # 2016
 
-Tampa Bay Data Science Group -- [An intro to the R tidyverse: dplyr,ggplot2, and some Twitter conference data visualization](intro_ggplot_twitter_conf_20160808.pdf)
+Tampa Bay Data Science Group -- 2016-08-08 [An intro to the R tidyverse: dplyr,ggplot2, and some Twitter conference data visualization](intro_ggplot_twitter_conf_20160808.pdf)
 
-Evolution 2016 -- [Associations between Methlyation and Climate in Arabidopsis](http://thomas-keller.github.io/talks/evolution2016_arab_meth_20160623.pdf)
+Evolution 2016 -- 2016-06-23 [Associations between Methlyation and Climate in Arabidopsis](http://thomas-keller.github.io/talks/evolution2016_arab_meth_20160623.pdf)
