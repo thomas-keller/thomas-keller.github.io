@@ -15,6 +15,11 @@
   excerpt: "papers, yep"
   image: back-23.jpg
 
+- title: Talks
+  url: /talks/
+  excerpt: "Slides of talks that may or may not make sense without speech."
+  image: back-36.jpg
+
 - title: About
   url: /about/
   excerpt: "How I got here, and where I'm going (I think)."
