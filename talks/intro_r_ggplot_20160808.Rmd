@@ -6,14 +6,25 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, message=FALSE)
 ```
 
 ## R Markdown
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this as seen below
+
+# R Markdown & life advice to past self analyzing datasets
+
+Trust me when I say it will make your life much easier if you keep a running document with your analyses and explanations of what you did and why you were doing it, especially if you are juggling multiple projects and need to put something down for a month or so. 
+
+I in the past had the "organisational" strategy of having a giant .R file with all my R code for a project, and I would occaisionally update a separate word document with some of the better plots and try to write them up. 
+
+**This is a bad strategy, don't me past me**
+
+Having a single document where you mix code, figures, and explanations will make things much easier.
+
 
 ```{r datasets}
 library(ghostr)
@@ -27,12 +38,10 @@ data('flights')
 
 #There are 5 dplyr verbs
 dplyr examples come from http://sharpsightlabs.com/blog/2014/12/11/dplyr-intro-data-manipulation-with-r/
+
 ## filter
 ```{r filter}
 df.diamonds_ideal <- filter(diamonds, cut=="Ideal")
-head(df.diamonds_ideal)
-df.diamonds_ideal <- select(df.diamonds_ideal, carat, cut, color, price, clarity)
-
 head(df.diamonds_ideal)
 ```
 
