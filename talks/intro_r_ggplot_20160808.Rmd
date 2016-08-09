@@ -21,7 +21,7 @@ Trust me when I say it will make your life much easier if you keep a running doc
 
 I in the past had the "organisational" strategy of having a giant .R file with all my R code for a project, and I would occaisionally update a separate word document with some of the better plots and try to write them up. 
 
-**This is a bad strategy, don't me past me**
+**This is a bad strategy, don't be past me**
 
 Having a single document where you mix code, figures, and explanations will make things much easier.
 
