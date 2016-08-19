@@ -1,0 +1,344 @@
+---
+title: "intro-r-tidyverse"
+author: "Thomas E. Keller"
+date: "August 19, 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE)
+```
+
+
+# R Markdown & life advice to past self analyzing datasets
+
+Trust me when I say it will make your life much easier if you keep a running document with your analyses and explanations of what you did and why you were doing it, especially if you are juggling multiple projects and need to put something down for a month or so. 
+
+I in the past had the "organisational" strategy of having a giant .R file with all my R code for a project, and I would occaisionally update a separate word document with some of the better plots and try to write them up. 
+
+**This is a bad strategy, don't be past me**
+
+Having a single document where you mix code, figures, and explanations will make things much easier. [Karl Broman](https://www.biostat.wisc.edu/~kbroman/presentations/repro_research_JSM2016.pdf) has a good talk on reproducible research, with pointers lying outside of just the report stage.
+
+
+```{r datasets}
+library(ghostr)
+library(nycflights13)
+library(ggplot2)
+library(readr)
+library(dplyr)
+data('ghost_sightings')
+data('flights')
+```
+
+#There are 5 dplyr verbs
+The package "dplyr" makes a lot of basic dataframe manipulation and transformation easier than the equivalent base code, or doing selections just based on column comparisons. It also often ends up being faster as well, especially for larger datasets. Check out this handy [cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf) on the various manipulations; the dplyr introductary [vignette](https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html) is also very helpful
+
+## filter
+filter lets you subset the data using conditional expressions. The following filter is equivalent to flights[flights$delay>0,] . As the conditions become more complex, filter becomes easier and easier to use compared to using the base subsetting options.
+```{r filter}
+glimpse(flights) #glimpse is a good way to get info on all the column variables
+flights2 <- filter(flights, dep_delay>0)
+glimpse(flights2)
+```
+
+## select()
+select cuts out just the variables that you want to work with at the moment. The nycflights13 dataset is a good example where the full dataset of 19 variables can be a bit unwieldy if you don't care about some or most of the variables for the given analysis at hand.
+```{r select}
+flights2 <- select(flights, dep_delay,arr_delay,carrier,air_time,time_hour)
+
+glimpse(flights2)
+glimpse(select(flights,dep_delay:air_time)) #subset by range of named columns
+```
+
+## mutate()
+Create new columns using mutate based on transformations or combinations of existing columns.
+```{r mutate}
+flights2 <- mutate(flights, 
+                   gain=arr_delay- dep_delay,
+                   speed=distance/air_time * 60 )
+
+glimpse(flights2)
+```
+
+## arrange()
+Sort dataframes according to different variables with arrange(). Defaults to ascending order, use desc() to reverse to descending order
+```{r arrange}
+flights2 = arrange(flights, dep_delay)
+glimpse(flights2)
+flights2 = arrange(flights, desc(dep_delay))
+glimpse(flights2)
+```
+
+## summarize()
+Collapse data to a single row
+```{r summarize}
+summarize(flights, avg_depdelay = mean(dep_delay, na.rm = TRUE) )
+```
+
+## Chaining dplyr verbs with %>% (pipe)
+The pipe operater let's you compactly perform operations in a left to right order. The unpiped version goes from inside out as nested function calls.
+```{r pipe}
+flights2 = flights %>%
+                              filter(dep_delay > 0) %>%
+                              select(dep_delay, arr_delay, carrier) %>%
+                              mutate(gain = arr_delay - dep_delay)
+glimpse(flights2)
+
+#equivalent but much harder to read code. 
+#Even breaking onto multiple lines doesn't really help
+flights2 = mutate( select( filter(flights,dep_delay > 0), 
+                         dep_delay, arr_delay, carrier), 
+                  gain = arr_delay - dep_delay)
+glimpse(flights2)
+```
+
+## rapid plotting
+
+```{r rapid_ggplot}
+flights %>%                                        # Start with the 'flights' dataset
+  filter(dep_delay> 0) %>%                        # Then, filter down to rows where departure was delayed
+  ggplot(aes(x=carrier,y=dep_delay)) +             # Then, plot using ggplot
+  geom_boxplot()  +                                #  and create a boxplot
+  coord_flip()                                    #flip axes to better use space
+```
+
+# Mapping and geoVis stuff
+A good tool if you are interested in this type of data is "ggmap" . We will use it now to plot ghost sightings and their relative density in Kentucky. 
+```{r ggmap}
+library(ggmap)
+library(ghostr)
+data(ghost_sightings)
+ky_bb=make_bbox(lon,lat,data=ghost_sightings,f=.1)
+map <- get_stamenmap(ky_bb, zoom = 7, maptype = "toner-lite")
+ggmap(map) + 
+  geom_point(aes(x=lon,y=lat,size=sightings),data=ghost_sightings) +
+  xlab("Longitude")+ylab("Latitude")
+#can use data from multiple datasets by specifying data= in geoms
+```
+## Twitter mining and social network analysis
+
+Here I will introduce some code to at people talking around hashtags (mostly scientific conferences). You can get the code at https://github.com/thomas-keller/tweet-conf . A more extended explanation of these analyses is at my website http://thomas-keller.github.io/articles/I-analyzed-evolution-2016-twitter-and-you-can-too-for-other-conferences/ . 
+
+In this example I'm just using a csv of parsed tweets rather than downloading something to introduce one less thing than can go wrong.
+
+```{r tweet-process}
+library(twitteR)
+library(ROAuth)
+library(tidytext)
+library(ggplot2)
+library(wordcloud)
+library(dplyr)
+
+#formatTwDate from SmappR https://github.com/SMAPPNYU/smappR/
+#By Pablo Barbera http://pablobarbera.com/ and others
+
+formatTwDate <- function(datestring, format="datetime"){
+  if (format=="datetime"){
+    date <- as.POSIXct(datestring, format="%a %b %d %H:%M:%S %z %Y")
+  }
+  if (format=="date"){
+    date <- as.Date(datestring, format="%a %b %d %H:%M:%S %z %Y")
+  }   
+  return(date)
+}
+
+#search along the hashtag (can be have multiple hashtags if you want/need)
+#convert to dataframe
+hashtag<-'#SciPy2016'
+confname<-substr(hashtag,2,nchar(hashtag))
+#tw_list <- searchTwitter(hashtag, n = 1e4, since = '2016-08-3')# , until='2016-07-14') #~5k tweets
+tw_df<-read_csv('scipy2016.csv') 
+#tw_df<-twListToDF(tw_list)
+tw_df<-unique(tw_df)
+filename<-paste0(confname,".csv")
+#write.csv(tw_df,file=filename,row.names=F)
+```
+
+Here is a simple wordcloud that demonstrates using tidytext (unnest_tokens) and dplyr chaining. The pipe %>% basically feeds the object on the left to the function on the right. 
+
+```{r wordcloud}
+users<-data.frame(word=tolower(tw_df$screenName),lexicon=rep('whatevs',nrow(tw_df)))
+#breaks down tweets into words for tidy (word) level analyses
+tidy_tw<-tw_df %>% unnest_tokens(word,text)
+
+#removes uninformatives words / ones that oversaturate wordcloud
+tw_stop<-data.frame(word=c(confname,tolower(confname),'htt','25','http','amp','gt','t.c','rt','https','t.co','___','1','2','3','4','5','6','7','8','9',"i\'m",'15','30','45','00','10'),lexicon='whatevs')
+data("stop_words")
+tidy_cloud <- tidy_tw %>%
+ anti_join(tw_stop) %>%
+  anti_join(stop_words) %>%
+  anti_join(users)
+
+print(tidy_cloud %>% count(word, sort = TRUE)) 
+
+tidy_cloud %>%
+ count(word) %>%
+ with(wordcloud(word, n,max.words = 100,colors=brewer.pal(8,'Dark2')))
+```
+
+Now we want to get a sense of who are the most active users of this hashtag. Here I'm introducing some ways to modify the default ggplot output
+
+```{R tweetrank}
+user.tweets <- as.data.frame(table(tw_df$screenName))
+names(user.tweets) <- c("User", "Tweets")
+
+# Order the table by number of tweets per user & do some culling
+user.tweets <- user.tweets[with(user.tweets, order(-Tweets)), ]
+user.tweets_fig<-user.tweets[user.tweets$Tweets>2,]
+user.tweets_fig<-user.tweets_fig[1:40,]
+
+#make the plot for the top 40 or so
+#I normally hate the x and y guide lines, but they serve a purpose with the extreme skew and names
+ggplot(data=user.tweets_fig, aes(x=reorder(User, Tweets), y=Tweets)) +
+  geom_bar(stat='identity') +
+  coord_flip() +
+  scale_y_continuous("Tweets") +
+  scale_x_discrete("User") +
+  labs(title = paste(hashtag, " tweets per user")) +
+  theme_bw() +
+  theme(axis.title = element_text(face="bold"), axis.text.y = element_text(size=6))
+```
+
+## Twitter sentiment
+
+This is a simple "bag of words" sentiment analysis
+
+```{r sentiment}
+tidy_tw$created<-formatTwDate(tidy_tw$created)
+tw_df$created<-formatTwDate(tw_df$created)
+
+
+library(tidyr)
+bing <- sentiments %>%
+ filter(lexicon == "bing") %>%
+ select(-score)
+
+conf_sent <- tidy_tw %>%
+ inner_join(bing) %>%
+ count(id, sentiment) %>% 
+ spread(sentiment, n, fill = 0) %>%
+ mutate(sentiment = positive - negative) %>%
+ inner_join(tw_df[,c(5,8)]) #join on id and created
+
+library(cowplot)
+library(scales)
+library(lubridate)
+
+#adjust time zone of tweets with lubridate
+conf_sent$created<-ymd_hms(conf_sent$created,tz='EST')
+
+#Example could include label, but don't have time to figure out what is driving
+#inflection points of moods during these other conferences
+df_labels<-data.frame(times=strptime(c("2016-07-13 12:00:00","2016-07-15 0:00:00","2016-07-16 16:30:00","2016-07-18 6:30:00"),"%Y-%m-%d %H:%M:%S"),
+                      labels=c("it begins!\nmixers for all","science cafe\nfunny-man",'final day\nmixer stuff','that was pretty\ngood reflection'),
+                      y=c(1.5,1.0,1.0,1.0))
+ggplot(conf_sent, aes(created, sentiment)) +
+ geom_smooth() + xlab("tweet time") + ylab("tweet sentiment")+
+ scale_x_datetime(breaks = date_breaks("day")) + background_grid(major = "xy", minor = "none") +
+ theme(axis.text.x=element_text(angle=315,vjust=.6))+
+  #geom_text(data=df_labels,aes(x=times,y=y,label=labels),size=4)+
+  ggtitle(paste(hashtag,"positive or negative emotions (think first order ~vibe of conf.)"))
+ #coord_cartesian(ylim=c(-.5,1.2)) #+geom_text(data=df_labels,aes(x=times,y=y,label=labels),size=4)
+```
+
+## tweet retweet network
+
+```{r network-preprocess}
+library(twitteR)
+library(tidytext)
+library(ggplot2)
+library(dplyr)
+library(igraph)
+library(stringr)
+
+hm<-sort(table(tw_df$screenName))
+outdf<-data.frame(screen_name=names(hm),num_tweets=hm)[,c(1,3)]
+outdf<-outdf[order(outdf[,2],decreasing=T),]
+
+#OK, start of new code to develop RT network
+#code (regex especially!!!) used liberally from
+# https://sites.google.com/site/miningtwitter/questions/user-tweets/who-retweet
+
+#TODO:
+#replace retweet network construction (not plotting)
+#with https://github.com/nfahlgren/conference_twitter_stats/blob/master/retweet_network_generic.R
+#it's cleaner and doesn't rely on regex horrors I don't understand
+
+rt_net<-grep("(RT|via)((?:\\b\\W*@\\w+)+)", tw_df$text, 
+             ignore.case=TRUE,value=TRUE)
+rt_neti<-grep("(RT|via)((?:\\b\\W*@\\w+)+)", tw_df$text, 
+              ignore.case=TRUE)
+
+#next, create list to store user names
+who_retweet <- as.list(1:length(rt_net))
+who_post <- as.list(1:length(rt_net))
+
+# for loop
+for (i in 1:length(rt_net))
+{ 
+  # get tweet with retweet entity
+  #nrow= ???
+  twit <- tw_df[rt_neti[i],]
+  # get retweet source 
+  poster<-str_extract_all(twit$text,"(RT|via)((?:\\b\\W*@\\w+)+)")  
+  #remove ':'
+  poster <- gsub(":", "", unlist(poster)) 
+  # name of retweeted user
+  who_post[[i]] <- gsub("(RT @|via @)", "", poster, ignore.case=TRUE) 
+  # name of retweeting user 
+  who_retweet[[i]] <- rep(twit$screenName, length(poster)) 
+}
+
+# unlist
+who_post <- unlist(who_post)
+who_retweet <- unlist(who_retweet)
+
+####
+#Preprocessing the dataframes as as contacts to something
+#igraph likes
+
+#I guess I need an edge aesthetic for ggraph to paint with
+retweeter_poster <- data.frame(from=who_retweet, to=who_post,retweets=1)
+
+#filters out some bad parsing and users who arent in the node graph
+#node_df has the screen_name and number of tweets per user, which will serve as the vertex/node dataframe
+#in igraph speak
+node_df<-outdf
+names(node_df)<-c("id","num_tweets")
+#This step #REALLLY IMPORTANT# for plotting purposes, determines how dense the network is
+#need to tune based on how big you want your input network is
+node_df2<-droplevels(node_df[1:50,]) #selecting only the top 50 posting from #evol2016 for plotting purposes
+filt_rt_post<-retweeter_poster[retweeter_poster$from %in% node_df2$id & retweeter_poster$to %in% node_df2$id,]
+filt_rt_post<-droplevels(filt_rt_post) #ditch all those fleshbags that had to talk to people instead of tweeting
+head(filt_rt_post)
+
+#this creates a directed graph with vertex/node info on num_tweets, and edge info on retweets
+rt_graph<-graph_from_data_frame(d=droplevels(filt_rt_post),vertices=droplevels(node_df2),directed=T)
+
+#simplify the graph to remove any possible self retweets since now twitter is dumb any allows that
+#and any multiple edges
+#have to wait a couple seconds to let graph be generated before simplify call
+#merge all the multiple rts a person has into one edge to simplify visualization
+rt_graph<-simplify(rt_graph,remove.multiple=T,remove.loops=TRUE,edge.attr.comb='sum')
+```
+
+## ggraph network
+```{r ggraph-network}
+library(ggraph)
+library(ggplot2)
+#jpeg('evol2016_top50_twitter_network.jpg',width=960,height=960,pointsize=12)
+ggraph(rt_graph,'igraph',algorithm='kk')+
+  geom_edge_fan(aes(alpha=retweet),edge_alpha=0.075)+
+  geom_node_point(aes(size=num_tweets))+
+  geom_node_text(aes(label=name,vjust=-1.5))+
+  ggforce::theme_no_axes()+
+  theme(legend.position=c(.08,.88))
+```
+
+# network degree distribution
+```{r degree-dist}
+deg.dist <-degree_distribution(rt_graph, cumulative=T, mode="all")
+deg_df<-data.frame(deg=0:max(degree(rt_graph)),cum_freq=1-deg.dist) 
+qplot(deg,cum_freq,data=deg_df,xlab="Degree",ylab="Cumulative Frequency")
+```
