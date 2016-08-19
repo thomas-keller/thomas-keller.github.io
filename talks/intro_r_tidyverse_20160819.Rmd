@@ -103,6 +103,24 @@ flights %>%                                        # Start with the 'flights' da
   coord_flip()                                    #flip axes to better use space
 ```
 
+## Grouping operations with group_by()
+group_by defines a variable to cut the original dataset into mini-datasets for further operations. This example is lifted verbatim from the dplyr vignette. Here, the grouping variable is unique plains, thereby averaging all the flights an airplane did together. Therefore, each point in the figure represents one airplane's data.
+```{r groupby}
+by_tailnum <- group_by(flights, tailnum)
+delay <- summarise(by_tailnum,
+  count = n(),
+  dist = mean(distance, na.rm = TRUE),
+  delay = mean(arr_delay, na.rm = TRUE))
+delay <- filter(delay, count > 20, dist < 2000)
+
+# Interestingly, the average delay is only slightly related to the
+# average distance flown by a plane.
+ggplot(delay, aes(dist, delay)) +
+  geom_point(aes(size = count), alpha = 1/2) +
+  geom_smooth() +
+  scale_size_area()
+```
+
 # Mapping and geoVis stuff
 A good tool if you are interested in this type of data is "ggmap" . We will use it now to plot ghost sightings and their relative density in Kentucky. 
 ```{r ggmap}
