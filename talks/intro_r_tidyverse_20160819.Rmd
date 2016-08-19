@@ -36,13 +36,15 @@ data('flights')
 ggplot2 is a really powerful visualization, assuming that your data is in a tidy format (one observation per row, each variables has its own column). If your data is not yet "tidy", tidyr and dplyr can greatly smooth that process.
 
 The grammar of graphics philosophy breaks down the mapping data to plot variables like x and y position separately from the actual type of plot being created, such as a dot plot or histogram. Let's start by looking at the relationship between the size of the engine (displ) and city mileage (cty). We first call ggplot and define the aesthetics for the x and y variables in the eventual plot, regardless of what shapes are drawn (points or lines or whatever). Then we add geom_ calls to draw the actual shapes for the plot we want. Let's begin with a dot plot.
-# basic plots
+
+## basic plots
 ```{r ggplot}
 glimpse(mpg)
 ggplot(mpg,aes(displ,cty))+geom_point()
 
 ggplot(mpg,aes(displ,cty,color=drv))+geom_point()
 ```
+
 ## faceting
 Faceting is a great way plot parts of your data conditioned on a variable. In this example, we will facet on "color" to see how the relationship between carat and price is affected by this third variable.
 
