@@ -32,7 +32,7 @@ data('flights')
 ```
 
 #There are 5 dplyr verbs
-The package "dplyr" makes a lot of basic dataframe manipulation and transformation easier than the equivalent base code, or doing selections just based on column comparisons. It also often ends up being faster as well, especially for larger datasets. Check out this handy [cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf) on the various manipulations; the dplyr introductary [vignette](https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html) is also very helpful
+The package "dplyr" makes a lot of basic dataframe manipulation and transformation easier than the equivalent base code, or doing selections just based on column comparisons. It also often ends up being faster as well, especially for larger datasets. Check out this handy [cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf) on the various manipulations; the dplyr introductary [vignette](https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html) is also very helpful.
 
 ## filter
 filter lets you subset the data using conditional expressions. The following filter is equivalent to flights[flights$delay>0,] . As the conditions become more complex, filter becomes easier and easier to use compared to using the base subsetting options.
@@ -62,7 +62,7 @@ glimpse(flights2)
 ```
 
 ## arrange()
-Sort dataframes according to different variables with arrange(). Defaults to ascending order, use desc() to reverse to descending order
+Sort dataframes according to different variables with arrange(). Defaults to ascending order, use desc() to reverse to descending order.
 ```{r arrange}
 flights2 = arrange(flights, dep_delay)
 glimpse(flights2)
@@ -71,7 +71,7 @@ glimpse(flights2)
 ```
 
 ## summarize()
-Collapse data to a single row
+Collapse data to a single row. Especially useful if you want to summarise subsets of the data based on a variable with group_by().
 ```{r summarize}
 summarize(flights, avg_depdelay = mean(dep_delay, na.rm = TRUE) )
 ```
