@@ -16,7 +16,7 @@ I'm rather late to party (this super amazing R guy Karl Broman has [archived tal
 
 # 2016
 
-WomeninLinux Virtual Conference -- 2016-08-20 An intro to the R tidyverse: dplyr,ggplot2, and some Twitter conference data visualization [slides](http://thomas-keller.github.io/talks/intro_tidyverse_twitter_conf_20160819) [Rmarkdown Rmd](http://thomas-keller.github.io/talks/intro_r_tidyverse_20160819.Rmd) [Rmarkdown html](http://thomas-keller.github.io/talks/intro_r_tidyverse_20160819.html)
+WomeninLinux Virtual Conference -- 2016-08-20 An intro to the R tidyverse: dplyr,ggplot2, and some Twitter conference data visualization [slides](http://thomas-keller.github.io/talks/intro_tidyverse_twitter_conf_20160820.pdf) [Rmarkdown Rmd](http://thomas-keller.github.io/talks/intro_r_tidyverse_20160819.Rmd) [Rmarkdown html](http://thomas-keller.github.io/talks/intro_r_tidyverse_20160819.html)
 
 Tampa Bay Data Science Group -- 2016-08-08 An intro to the R tidyverse: dplyr,ggplot2, and some Twitter conference data visualization [slides](http://thomas-keller.github.io/talks/intro_ggplot_twitter_conf_20160808.pdf) [R Markdown Rmd](http://thomas-keller.github.io/talks/intro_r_ggplot_20160808.Rmd) [R Markdown html](http://thomas-keller.github.io/talks/intro_r_ggplot_20160808.html)
 
