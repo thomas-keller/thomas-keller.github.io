@@ -38,20 +38,5 @@ After some soul searching I've realized that for better or worse academic resear
 
 As a specific application I've been working with [Loni Hagan](https://scholar.google.com/citations?user=eVzJHmkAAAAJ&hl=en) on the interactions and dynamics of the #Zika hashtag on Twitter and how effective health communication is in this network. 
 
-## Evolution is the main connecting tissue of my academic papers
-
-TODO: Note to self/anybody else; this part is basically a relic of thought outlines from my path to undergrad to where I am now. At some point I will flesh it out, but it's mostly a curiousity.
-
-I have studied a great many things since I began my academic research career. I actually first began doing research in a [shark research lab](https://www.flmnh.ufl.edu/fish/fpsr/) at the University of Florida counting shark rings on vertebrae to estimate age (important for fisheries, etc, especially as most shark hunting tends to be exclusively for the fins and in the past has rapidly depleted populations).
-
-count worms
-
-farm bacteria
-
-tame computers
-
-epigenetics (biggish data - mammalian genomes)
-
-data science
 
 
