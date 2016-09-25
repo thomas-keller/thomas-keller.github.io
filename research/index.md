@@ -16,7 +16,13 @@ share: false
 
 ## Ongoing projects and interests
 
+I guess stay posted as to where exactly this goes over the next while...I'm talking to some groups about what to do next in Thomas's life (tm).
+
 # Evolution
+
+Evolution is what my Ph.D. training was in, so it's no surprise that this is a deep well that I keep returning to. Over time my interested have broadened as I have become more skilled at data analysis and statistics in general, but at heart I am fascinated by questions that have some evolutionary hook to them.
+
+I guess stay posted as to where exactly this goes over the next while...I'm talking to some groups about what to do
 
 # Epigenetics
 
@@ -28,7 +34,7 @@ It has some interesting aspects as it is the inverse of a "classic" machine lear
 
 As I was winding down my first postdoc I seriously considered life in private industry, and still do to a certain extent. To that end, I've read several books on machine learning and taken to learning some Spark for Big Data (tm) challenges.
 
-After some soul searching I've realized that for better or worse academic research in some form is probably a better fit for me, so now I'm trying to figure out how to to put the tools I've picked up in the last few months (which I genuinely like) to good use. One of the realms I've had a lot of fun is exploring interaction networks in Twitter via mention and retweet graphs. 
+After some soul searching I've realized that for better or worse academic research in some form is probably a better fit for me, so now I'm trying to figure out how to to put the tools I've picked up in the last few months (which I genuinely like) to good use. One of the realms where I've had a lot of fun is exploring interaction networks in Twitter via mention and retweet graphs. 
 
 As a specific application I've been working with [Loni Hagan](https://scholar.google.com/citations?user=eVzJHmkAAAAJ&hl=en) on the interactions and dynamics of the #Zika hashtag on Twitter and how effective health communication is in this network. 
 
