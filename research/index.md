@@ -22,7 +22,6 @@ I guess stay posted as to where exactly this goes over the next while...I'm talk
 
 Evolution is what my Ph.D. training was in, so it's no surprise that this is a deep well that I keep returning to. Over time my interested have broadened as I have become more skilled at data analysis and statistics in general, but at heart I am fascinated by questions that have some evolutionary hook to them.
 
-I guess stay posted as to where exactly this goes over the next while...I'm talking to some groups about what to do
 
 # Epigenetics
 
