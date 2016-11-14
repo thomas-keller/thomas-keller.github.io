@@ -111,9 +111,11 @@ frequency
 
 Here in the ball of words below, you'll see some of my interests over the last year. One important, actually HUGE caveat is that I haven't separated out retweets from my own tweets in this analysis. In part that's because I'm not a very vocal tweeter still, I tend towards finding interesting accounts and retweeting stuff I find interesting. Definitely something to look back on the reduced, smaller dataset of just my own tweets, few as they are.
 
-![image](http://thomas-keller.github.io/images/tek_twitter_words.png)
+<img src="https://thomas-keller.github.io/images/tek_twitter_words.png" width="800">
 
-The big hashtags #Evol2016 and #TGCA2016 refer to the two big biology conferences that I went to this year. I met some great people, and saw a bunch of old friends. Evolution was especially great, with it being in Austin and all.
+The big hashtags ~~#Evol2016 and #TGCA2016~~ refer to the two big biology conferences that I went to this year (actually I deleted these because they were too big and throwing things off). I met some great people, and saw a bunch of old friends. Evolution was especially great, with it being in Austin and all. The adjusted wordcloud now has seasonally appropriate fall coloring, as an unintentional bonus.
+
+The parsing and regex (notably the str_replace_all) didn't quite work as planned, there's still some https and and htt hanging around. Probably the thing to do is a bind_row and then an filter with the extra stop words appended.
 
 # Tracking emotion with the Hedonometer
 
@@ -168,7 +170,7 @@ ggsave(file=filename,width=7,height=7,dpi=100)
 
 ![image](http://thomas-keller.github.io/images/tek_hedonometer_2016.png)
 
-As you can see, there has been a gradual, slight decline in positivity at the beginning of the year towards some kind of middle ground of ~0.7 around May with some bumps (conferences) in the summer, with an increase in September and then a sharper decrease in November. I won't overanalyze myself, but that fits with about how my year has gone. I've been trying to figure out where I want to go after I finished my postdoc last December, and have yet to have a permanent full time job lined up. For awhile I thought I'd go into the private sector but that seems like that might not be the best fit for me, so in September I was fortunate enough to have the oportunity to come back up to Atlanta to work with my advisor Dr. Yi to do some machine learning on some biological datasets (hopefully an upcoming post; I need to get back to blogging). That matches with the uptick in mood, it was really nice to be back in an office environment after applying for a bunch of jobs without luck (I suppose I was too restrictive in trying to stay near parents in Tampa).
+As you can see, there has been a gradual, slight decline in positivity at the beginning of the year towards some kind of middle ground of ~0.7 around May with some bumps (conferences) in the summer, with an increase in September and then a sharper decrease in November. I won't overanalyze myself, but that fits with about how my year has gone. I've been trying to figure out where I want to go after I finished my postdoc last December, and have yet to have a permanent full time job lined up. For awhile I thought I'd go into the private sector but that seems like that might not be the best fit for me, so in September I was fortunate enough to have the opportunity to come back up to Atlanta to work with my advisor Dr. Yi to do some machine learning on some biological datasets (hopefully an upcoming post; I need to get back to blogging). That matches with the uptick in mood, it was really nice to be back in an office environment after applying for a bunch of jobs without luck (I suppose I was too restrictive in trying to stay near parents in Tampa).
 
 # The Election Event
 
