@@ -195,7 +195,7 @@ ggsave(file=filename,width=7,height=7,dpi=100)
 
 No real surprise, I guess. There was indeed a big dip on election day, though its somewhat evened out over the last few days. I'm still processing what this election means. In some ways, as a white dude I can just put my head down and soldier on. However, I have a lot of friends who are vastly more negatively affected than this election than I am, and it weighs on my mind.
 
-My plan is to donate monitarily once I'm hired to a permanent position in the coming months, but in the meantime I will probably do some volunteer work to ease the existential angst I'm feeling. It's easy to say something and then forgot about it once the initial shock and horror fades away (such as this election), my hope is that in writing it I won't forget my obligations.
+My plan is to donate monetarily to some organizations once I'm (hopefully) hired to a permanent position somewhere in the coming months, but in the meantime I will probably do some volunteer work to ease the existential angst I'm feeling. It's easy to say something and then forgot about it once the initial shock and horror fades away (such as this election), my hope is that in writing it I won't forget my obligations.
 
 Time to get out of the doldrums, in any case.
 
