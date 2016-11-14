@@ -11,14 +11,14 @@ image:
 
 ## Incorporation of Hedonometer lexicon to Tidytext
 
-The paper by [Dodds et al. in 2011](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0026752) introduced the concept of the Hedonemeter, which measures one specific gradient of emotion, happiness - on twitter. 
+The paper by [Dodds et al. in 2011](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0026752) introduced the concept of the Hedonometer, which measures one specific gradient of emotion, happiness or its inverse sadness - to the Twitter platform. 
 
-They mentioned that the day of the election was the third saddest day on twitter (the others being the Pulse and Dallas shootings).
+They mentioned that the day of the election was the third saddest day on Twitter (the others being the Pulse and Dallas shootings).
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Yesterday was the third saddest day in the history of Twitter<a href="https://t.co/bQDYojAVF2">https://t.co/bQDYojAVF2</a> <a href="https://t.co/MMPGRWh4j6">pic.twitter.com/MMPGRWh4j6</a></p>&mdash; hedonometer (@hedonometer) <a href="https://twitter.com/hedonometer/status/796692807293472768">November 10, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-As a small project of introspection and self-care, I wanted to see how the sentiment in my Twitter time-line has changed in and around the election using this metric. 
+This past month has been somewhat rough, and the election outcome was quite a shock and dismay to me. As a small project of introspection and self-care, I wanted to see how the sentiment in my Twitter time-line has changed in and around the election using this metric. 
 
 At first I thought I would be limited to the last 3200 tweets (the API limit for user timelines), but reading Silge and Robinson's book (see the next section), you can get your full twitter archive by going to [your twitter setting](https://twitter.com/settings/account) and clicking on archive and waiting for the email.
 
