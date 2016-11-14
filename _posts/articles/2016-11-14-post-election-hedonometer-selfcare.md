@@ -15,8 +15,6 @@ The paper by [Dodds et al. in 2011](http://journals.plos.org/plosone/article?id=
 
 They mentioned that the day of the election was the third saddest day on twitter (the others being the Pulse and Dallas shootings).
 
-I wanted to be a cool kid like [Keith Turner](http://twitter.com/kay_aych) and his analysis of ISME2016, which included lots of tweet embeds, but I think that only works if the document is a shiny app?
-
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Yesterday was the third saddest day in the history of Twitter<a href="https://t.co/bQDYojAVF2">https://t.co/bQDYojAVF2</a> <a href="https://t.co/MMPGRWh4j6">pic.twitter.com/MMPGRWh4j6</a></p>&mdash; hedonometer (@hedonometer) <a href="https://twitter.com/hedonometer/status/796692807293472768">November 10, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
