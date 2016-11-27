@@ -6,7 +6,7 @@ comments: true
 categories: articles
 tags: R, tidytext, ggplot, python
 image:
-    teaser: lichen.jpg
+    teaser: back-7.jpg
 ---
 
 ## PLoS Ginormo Corpus
