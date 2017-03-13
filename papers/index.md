@@ -15,7 +15,8 @@ share: false
 {% include toc.html %}
 
 # Here are my papers on various evolutionary biology things
-
+15. L. Hagen. **T. E. Keller**, S. Neely, N. DePaula, C. Cooperman.  Use of Twitter for Public Health Emergencies: A Case Study Regarding Spread of Zika Virus. Submitted to Social Science Computer Review.
+14. I. Mendizabal, J. Zeng, **T. E. Keller**, S. V. Yi. Body-hypomethylated human genes harbor extensive intragenic transcriptional activity and are prone to cancer-associated dysregulation. *Nucl. Acids. Res.*, [doi 10.1093/nar/gkx020](http://thomas-keller.github.io/papers/mendizabal_gbody2017.pdf) .
 13. I. Mendizabal, L. Shi, **T. E. Keller**, G. Konopka, T. M. Preuss, T. Tsieh, E. Hu, Z. Zhang, B. Su, S. V. Yi. [Comparative methylome analyses reveal epigenetic loci implicated in transcription regulation of human brains.](http://mbe.oxfordjournals.org/content/early/2016/09/12/molbev.msw176.full.pdf+html) In press, *Molecular Biology and Evolution*, doi 10.1093/molbev/msw176
 12. **T. E. Keller**, J. E. Lasky, S. V. Yi. [The multivariate association between genome-wide DNA methylation and climate across the range of *Arabidopsis thaliana*.](http://onlinelibrary.wiley.com/doi/10.1111/mec.13573/abstract) [pdf](http://thomas-keller.github.io/papers/kly2016.pdf) *Molecular Ecology* 25:1823--1837, 2016. 
 11. **T. E. Keller**, P. Han, S. V. Yi. [Evolutionary transition of promoter and gene body DNA methylation across invertebrate-vertebrate boundary.](http://mbe.oxfordjournals.org/content/33/4/1019)  *Molecular Biology and Evolution* 33:1019--1028, 2016.
