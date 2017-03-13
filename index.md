@@ -9,7 +9,7 @@ image:
 
 <div class="tile">
   <h2 class="post-title">Bioinformatician</h2>
-  <p class="post-excerpt">My Ph.D. and Postdoctoral studies focused on various computational themes within the realm of Evolutionary Biology. It was pretty cool. Here is a <a href="http://thomas-keller.github.io/cv_thomas_keller_092516.pdf">Full Academic CV</a>. I'm working on getting the Papers part of the webpage to have links/pdfs on the off chance people want those. In the meantime, you may find my <a href="http://scholar.google.com/citations?user=HIBfsy4AAAAJ&hl=en"> Google Scholar profile </a> useful in tracking down my papers.  </p>
+  <p class="post-excerpt">My Ph.D. and Postdoctoral studies focused on various computational themes within the realm of Evolutionary Biology. It was pretty cool. Here is a <a href="http://thomas-keller.github.io/cv_thomas_keller_nopics_031317.pdf">Full Academic CV</a>. I'm working on getting the Papers part of the webpage to have links/pdfs on the off chance people want those. In the meantime, you may find my <a href="http://scholar.google.com/citations?user=HIBfsy4AAAAJ&hl=en"> Google Scholar profile </a> useful in tracking down my papers.  </p>
 </div><!-- /.tile -->
 
 <div class="tile">
