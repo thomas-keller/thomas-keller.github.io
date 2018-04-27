@@ -1,7 +1,7 @@
 ---
 layout: article
 title: If you make a package but don't tell anyone about it, does it really exist?
-excerpt: 
+excerpt: I somewhat recently went through the excercise of writing a simple R package based around the steamspy API.
 comments: true
 categories: articles
 tags: philosphy, steamspy, one hand clapping, development, writing
