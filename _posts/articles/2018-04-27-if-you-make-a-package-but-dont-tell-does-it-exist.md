@@ -59,6 +59,10 @@ She mentions lots of good things, but I'll spoil what I think is really the key,
 
 The [post by David Robinson](http://varianceexplained.org/r/start-blog/) where that tweet came from is pretty good about motivations for writing a blog and how to push yourself.
 
+Here is a [post by Sean Kross](http://seankross.com/2017/11/06/Enabling-Frequent-Brain-Dumps.html) that expresses much the same sentiment, but his approach is to split things into long-form (full blog posts), and shorter snippets/looser writing that can still get put out to the world. Still, the net effect is the same; thoughts cooped up in your head aren't really doing yourself or anyone else any favors after a certain point. 
+
+Don't develop in the dark!
+
 # Push that project out of the nest
 
 In the software development and biz-dev world it's hip to talk about the "minimum viable product" and I think for scientists it's definitely useful to graduate to more of a "f-it, we'll do it live" mind-set for getting some projects off the ground, especially if your inherent tendency is to fiddle with things in pursuit of some far off and likely unattainable bar of perfection.
