@@ -11,7 +11,7 @@ image:
 
 ## If you make a tool/package but don't tell anyone about it, that knowledge is locked away in your mind
 
-I somewhat recently went through the excercise of writing a simple R package based around the [steamspy](https://steamspy.com/) API. If interested, the [R code lies here](https://github.com/thomas-keller/steamspyR). I chose this API because it was simple, short, and explicit; I had also never actually gone through the steps of gussying up my code into a proper package before, so this was a nice excercise for that was well.
+I somewhat recently went through the excercise of writing a simple R package based around the [steamspy](https://steamspy.com/) API. If interested, the [R code lies here](https://github.com/thomas-keller/steamspyR). I chose this API because it was simple, short, and explicit; I had also never actually gone through the steps of gussying up my code into a proper package before, so this was a nice excercise for that as well.
 
 *However*, I made the critical error of not finishing it up right away and pushing it out the door, warts and all. It then sat on my hard drive, forgotten and unwritten about, until the underlying API was dealt a more or less killer blow that made this silly package functionally useless for the moment.
 
