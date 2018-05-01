@@ -84,7 +84,7 @@ ggplot(aes(price,median_2weeks),data=df)+facet_wrap(~owners)+geom_point()
 
 ``` 
 
-![meaningless plot](https://github.com/thomas-keller/steamspyR/blob/master/steamspy_ex.png)
+![meaningless plot](https://github.com/thomas-keller/thomas-keller.github.io/images/steamspy_ex.png)
 
 # The end (?)
 
