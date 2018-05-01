@@ -27,7 +27,7 @@ This tweet from Amelia McNamara, of a slide from David Robinson, is something I 
 
 As stated, making a package was new territory to me. Thankfully, the combination of typing "how to make an R package" and pulling up [Hilary Parker's still excellent post](https://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/) from 2014, as well as the usethis package were enough to keep me from serious harm.
 
-Seriously, the following few functions save a lot of legwork, especially if you a serial package creator, like [Mike Kearney](https://github.com/mkearney?tab=repositories)
+Seriously, the following few functions save a lot of legwork, especially if you are a serial package creator, like [Mike Kearney](https://github.com/mkearney?tab=repositories).
 
 ```R
 
