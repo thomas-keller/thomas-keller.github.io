@@ -35,17 +35,17 @@ library(usethis)
 
 create_package("~/pkg_ex")
 
-use_package("MASS", "Suggests")
+use_package("dplyr", "Suggests")
 
 use_roxygen_md()
 use_readme_md()
 ```
 
-Really, the only thing I found a bit annoying was the roxygen annotation. Adding the descriptions themselves was fine, I was just thrown initially by the fact that all functions are by default private unless you declare them with @export in the roxygen documentation.
+Really, the only thing I found a bit annoying was the roxygen annotation. Adding the descriptions themselves was fine, I was just thrown initially by the fact that all functions are by default private unless you declare them with @export in the roxygen documentation. Of course, I think that is more a function of me not being use to the syntactic sugar that roxyen asks of you.
 
 # There has to be a warning coming from this story, right?
 
-So, if you don't play videogames, or maybe even if you do, these recent events may events may have passed under the radar. On the April 4, 2018, Valve changed [user accounts to make most details by default](https://arstechnica.com/gaming/2018/04/steam-spy-announces-its-shutting-down-blames-valves-new-privacy-settings/). This had the immediate effect of essentially killing Steamspy, which relied on that information being public to tally its game numbers.
+So, if you don't play videogames, or maybe even if you do, these recent events may have passed under the radar. On the April 4, 2018, Valve changed [user accounts to make most details by default](https://arstechnica.com/gaming/2018/04/steam-spy-announces-its-shutting-down-blames-valves-new-privacy-settings/). This had the immediate effect of essentially killing Steamspy, which relied on that information being public to tally its game numbers.
 
 While I had only spent a day or fiddling with the code to get the package set up, the ultimate plan in my mind was always to write some sort of blog post to show it off, but more to point to usethis. However, as things inevitably do, other things cropped up and this project was placed on the ultimate back-burner and ultimately forgotten about. Then, after the change to Steam's service that basically killed of the functionality of the package I lost even more motivation to write about it.
 
@@ -61,11 +61,11 @@ The [post by David Robinson](http://varianceexplained.org/r/start-blog/) where t
 
 # Push that project out of the nest
 
-In the software development and biz-dev world it's hip to talk about the "minimum viable product" and I think for scientists it's definitely useful to graduate to more of a "f-it, we'll do it live" mind-set for getting some projects off the ground, especially if your inherent tendency is to fiddle with things in persuit of some far off and likely unattainable bar of perfection.
+In the software development and biz-dev world it's hip to talk about the "minimum viable product" and I think for scientists it's definitely useful to graduate to more of a "f-it, we'll do it live" mind-set for getting some projects off the ground, especially if your inherent tendency is to fiddle with things in pursuit of some far off and likely unattainable bar of perfection.
 
 Setting a lower bar that's "well, at least this part works, and I want to do x, y, and z" gets it out the door and gives you some momentum. 
 
-And yet, even this post was 95% written on 04-27, and then I STILL sat on it for a few more days so I could update the R package (why???)
+**Update 05-01** And yet, even this post was 95% written on 04-27, and then I STILL sat on it for a few more days so I could update the R package (why???)
 
 Well, I guess I can at least show off the proof of concept that you can grab data from it and do some plotting fairly easily.
 
