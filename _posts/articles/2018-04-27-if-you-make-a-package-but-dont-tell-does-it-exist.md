@@ -84,7 +84,7 @@ ggplot(aes(price,median_2weeks),data=df)+facet_wrap(~owners)+geom_point()
 
 ``` 
 
-<img src="https://github.com/thomas-keller/thomas-keller.github.io/images/steamspy_ex.png" width=1024>
+<img src="https://thomas-keller.github.io/images/steamspy_ex.png" width=1024>
 
 # The end (?)
 
