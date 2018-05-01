@@ -65,11 +65,32 @@ In the software development and biz-dev world it's hip to talk about the "minimu
 
 Setting a lower bar that's "well, at least this part works, and I want to do x, y, and z" gets it out the door and gives you some momentum. 
 
+And yet, even this post was 95% written on 04-27, and then I STILL sat on it for a few more days so I could update the R package (why???)
+
+Well, I guess I can at least show off the proof of concept that you can grab data from it and do some plotting fairly easily.
+
+```R
+
+library(steamspyR)
+library(forcats)
+df=genre_games("Action")
+
+df$owners=readr::parse_factor(df$owners,rev(unique(df$owners)))
+
+library(ggplot)
+
+library(cowplot)
+ggplot(aes(price,median_2weeks),data=df)+facet_wrap(~owners)+geom_point()
+
+``` 
+
+![meaningless plot](https://github.com/thomas-keller/steamspyR/blob/master/steamspy_ex.png)
+
 # The end (?)
 
 In a bizarre twist of fate, on the day I decided to finally write this up, April 27, 2018, the creator of Steam Spy (Sergey Galyonkin) [announced in a blog post](https://galyonk.in/whats-going-on-with-steam-spy-deed5d699233) it might not actually be dead, by using fancy machine-learning methods estimating sales data from other sources. Parts of the API are coming back, but it's apparently incomplete right now. 
 
-So, in the end maybe this package could be used eventually (!)
+So, in the end this package's functionality has not totally died. Yay~
 
 
 
